@@ -30,9 +30,3 @@
 *.exe
 *.out
 *.app
-
-# Csv files
-*.csv
-
-# Picture extension
-*.jpg
