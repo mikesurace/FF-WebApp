@@ -16,16 +16,29 @@ shinyUI(fluidPage(
                             column(width = 5,
                                    a(class="twitter-timeline", "data-height" = "800",href="https://twitter.com/POCKETsurACES/lists/latest-news", 
                                      src="//platform.twitter.com/widgets.js"))))),
+                 
+                 
                  navbarMenu("Analytics", icon = icon('bar-chart'),
                       tabPanel("Rankings", icon = icon('tasks'),
                                fluidPage(fluidRow(column(width= 4,
                                           includeMarkdown("html/rankings.Rmd")),
                                          column(width = 8, 
                                                   DT::dataTableOutput('PlayerProjections'))))),
+                      
+                      
                       tabPanel("Game Logs", icon = icon('google'),
-                               DT::dataTableOutput('gamelogs')),
+                               fluidPage(fluidRow(column(width = 3,
+                                                      selectInput('GM',"Select a Team:",team_list)),
+                                                  column(width = 3,
+                                                         sliderInput('period',"Choose Time Period:",min = 2012, max = 2016,
+                                                                     value = c(2012,2016), sep =""))),
+                                         fluidRow(DT::dataTableOutput('gamelogs')))),
+                      
+                          
                       tabPanel("Playoff Stats", icon = icon('tasks'),
                                DT::dataTableOutput('PlayoffData')),
+                      
+                      
                       tabPanel("Trend Analysis", icon = icon('line-chart'),
                             fluidPage(fluidRow(column(width = 5, 
                                                   includeMarkdown("html/trend.Rmd")),
@@ -40,10 +53,13 @@ shinyUI(fluidPage(
                                               column(width = 6, offset = 1,
                                                       plotlyOutput('barchart')))),
                                       br(), br(), br())),
+                 
+                 
                   tabPanel("League Rules",
                             tags$iframe(style = "height:1000px; width:100%; scrolling=yes",
-                                          src = "Rule_Updated.pdf")
-                          ),
+                                          src = "Rule_Updated.pdf")),
+                 
+                 
                  tabPanel("Meet the Inebo",
                           fluidPage(div("Player Profile",
                                       br(), br(), br()),
@@ -82,9 +98,8 @@ shinyUI(fluidPage(
                                     br(), br(), br(),
                                     fluidRow(column(width = 7, includeMarkdown("html/bios/jerry_desc.Rmd")),
                                               column(width = 4, offset = 1, img(src = "jerry.jpg",width = 300, height = 300))),
-                                    br(), br(), br()
-                                    
-                          )),
+                                    br(), br(), br())),
+                 
                  tabPanel("Draft Day Toolkit")
                  )
 ))

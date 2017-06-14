@@ -31,6 +31,12 @@ shinyServer(function(input, output, session) {
               
           return(opp)
     })
+    
+    gamelogs <- reactive({
+      data <- Reg_Data_01 %>%
+              filter(Team == input$GM, Year %between% input$period) %>%
+              select(-Season,-Win_Pct,-Team)
+      return(data)})
    
 
   output$PlayerProjections <- DT::renderDataTable(formatRound(DT::datatable(rankings_final, options = list(pageLength = 25, dom = 't'), 
@@ -47,7 +53,8 @@ shinyServer(function(input, output, session) {
                                                                'Championships','Ave Points Scored','Ave Points Against')),
                                                   c('Playoffs_Pts_For','Playoffs_Pts_Against'),2))
   
-  output$gamelogs <- DT::renderDataTable(DT::datatable(gamelog, options = list(pageLength = 100), rownames = FALSE))
+  output$gamelogs <- DT::renderDataTable({DT::datatable(gamelogs(), options = list(pageLength = 100), rownames = FALSE)})
+  
   output$trend <- DT::renderDataTable({formatPercentage(datatable(datatrend(), options = list(pageLength = 25, dom = 't'), 
                                                  rownames = FALSE, 
                                                  colnames = c('Opponent', 
