@@ -1,0 +1,15 @@
+---
+output: html_document
+---
+
+### League Overview
+The Inebriation of Confederation was established in 2011 by a group of 10 free-spirited young men, hell bent on fantasy glory and alcohol consumption. Over the years the Confederation has grown to 12 mature responsible adults..
+...still hell bent on fantasy glory and alcohol consumption. It is a Confederation filled with personality, competition, and, most importantly, respect. Faced by Commissioner Gordon, and run by PEDGE, the Conderferation is stronger than ever. The 2017 season is shaped to be a classic, with many questions to be answered. 
+
+Will milk begin to curd or remain creamier than ever? Will Gordon finally win a championship? Will Ben crack 80 points in a single week? Will the Ghost return to his old form? Will Dune send a message in GroupMe? Will Tross finish the season with a single drafted player? Will Poppy finally admit his allegiance to PEDGE? Will the Shepherd rise to greatness once again? Will Richard remain mediocre? Stay tuned.
+
+### Commissioner's Corner
+Run and managed by Ronnie Remi, the Commish's Corner offers your daily dose of weekly predictions and brilliant previews. Check out the most recent previews [Here] (https://football.fantasysports.yahoo.com/f1/25951/messages)
+
+
+

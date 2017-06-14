@@ -1,0 +1,5 @@
+---
+title: "Trend"
+output: html_document
+---
+The trend analysis tool is designed to allow for GMs to take a deep dive into the data and proivede the information needed to support the claim of greatest fantasy manager. Need to know who you dominate? Your have arrived at the right spot.  

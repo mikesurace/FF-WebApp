@@ -1,0 +1,11 @@
+---
+title: "ghost_desc"
+output: html_document
+---
+
+### Joe "The Ghost" Lavin
+**Hometown:** Pedge  
+**Record:** 36 - 29  
+**Skill:** Icognitus  
+
+The Ghost is the final member of PEDGE and boasts an interesting track record. He has reached the postseason 4 times, but has been unable to record a single postseason victory. Still, The Ghost is largely regarded as one of the better GMs in the Inebo, and seems poised for a championship. That said, never forget the day The Ghost invaded MSG for the Liberty game. Never. Forget.   

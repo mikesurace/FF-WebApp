@@ -1,0 +1,11 @@
+---
+title: "dunn_desc"
+output: html_document
+---
+### Jack "The Dunne Squad" Dunn
+**Hometown:** Massapequa  
+**Record:** 30 - 35  
+**Skill:** Liberalism
+
+Jack is widely considered as the "Token Liberal" of the Confederation. Although he is virtually non-existent in the GroupMe, his spirit lives on when People's Champ decides to take on his persona every so often. Jack has had a [simple](https://lh4.googleusercontent.com/-lYIdDfwuVUE/AAAAAAAAAAI/AAAAAAAAADo/JTr_FJQK6aI/photo.jpg) life in the Inebo. He's not quite a bottomfeeder, but he also hasn't dealt with the stresses that come along with a playoff run. Jack is a beloved member of the Inebo, even if he would rather take people's hard working money, and allocate it to his fellow Socialists.
+

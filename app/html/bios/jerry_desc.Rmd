@@ -1,0 +1,11 @@
+---
+title: "jerry_desc"
+output: html_document
+---
+### Jerry "The Black Shepherd" Grazioli
+**Hometown:** Huntington  
+**Record:** 33 - 32  
+**Skill:** 
+
+The Black Shepherd. The only Champion of the dead ball era and agruably the one stain on the great Inebo. The Shepherd has his ups and downs. Sometimes resembling a witty top 3 GM in this league and other times trading the NFL leading RB for Allen Robinson. Though, The Shepherd is more active than ever in the GroupMe, and seems ready to beat The Ghost in the race back to  relevance. Hide your kids, hide your sheep....The Black Shepherd is Back? 
+

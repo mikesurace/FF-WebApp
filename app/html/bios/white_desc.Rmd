@@ -1,0 +1,11 @@
+---
+title: "white_desc"
+output: html_document
+---
+
+### Alex "The People's Champion" White
+**Hometown:** Levittown  
+**Record:** 34 - 31  
+**Skill:** Memes/Gifs and GroupMe Harassment   
+
+The People's Champ is the most volatile of all Inebo members. P.C.'s muckraking would make Upton Sinclair proud. There is not a single GM that has not faced the wrath of the People's Champ libel campaign. When P.C. isn't buying real estate in Poppy's head, he can be found slugging Bloody Mary's and kicking it with Wife1.

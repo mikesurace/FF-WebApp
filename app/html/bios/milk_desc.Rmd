@@ -1,0 +1,12 @@
+---
+title: "milk_desc"
+output: html_document
+---
+
+### Kevin "The Milk Man" Hutzel
+**Hometown:** Pedge  
+**Record:** 27 - 38  
+**Skill:** Homogenization  
+
+One of the three members of PEDGE, the Milk Man has brought the Golden Delakas back to where it belongs. Milk has had his share of despair in the early seasons of the Inebo, but in recent years has shown himself to be a formidable GM. When The Milk Man is not homogenizing milk, he can be found hashtagging "LGM" and telling people how he only drinks his coffee black. Can Milk become the first repeat Champion?  
+

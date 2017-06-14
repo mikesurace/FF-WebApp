@@ -1,0 +1,55 @@
+---
+output: html_document
+---
+
+# Article I
+## Officers
+### § 101: Office of the Commissioner
+a. The Office of the Commissioner shall be held indefinitely
+unless removal for good cause by a vote of eleven (11) General
+Managers.  
+
+b. Commissioner Gordon is the first appointed Commissioner.  
+
+c. Commissioner's office shall oversee:  
+1. league settings;  
+2. draft orders & draft date;  
+3. trade approval;  
+4. and all other cases and controversy.  
+
+### § 102: Office of the Attorney General
+a. The Office of the Attorney General shall be held
+indefinitely unless removal for good cause by a vote of eleven (11)
+General Managers.  
+
+b. The People's Champ is the first appointed Attorney General.  
+
+c. The Attorney General's Office shall oversee all enforcement
+and investigations of rules established herein and file any General
+Manager's grievance with the Commissioner.  
+
+d. In times of crisis the Attorney General may delegate any of
+his powers to the Assistant Attorney General.  
+1. The Assistant Attorney General is subject to appointment
+and removal soley by the Attorney General.
+2. The first appointed Assistant Attorney General is Milk
+Man.  
+
+### § 103: Department of Analytics
+a. The Department of Analytics shall consist of two officers:
+Lord Commander and Grand Maester.
+b. The position of Lord Commander and Grand Maester shall be
+held indefinitely unless removal for good cause by a vote of eleven
+(11) General Managers.
+c. Surace is the first appointed Lord Commander.
+e. Poppy's Champions is the first appointed Grand Maester.
+f. The Department of Analytics shall record all league stats
+and compile an accurate and truthful ranking system of the General
+Managers of such Confederation.
+1. The Department of Analytics shall have discretion to
+implement the stats and calculations it may use upon advice of
+the General Managers.
+g. The Lord Commander shall oversee all paperwork submitted by
+the Grand Maester.
+h. No General Manager shall challenge the findings of the
+Department of Analytics without good cause.

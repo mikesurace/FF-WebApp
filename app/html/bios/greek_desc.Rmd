@@ -1,0 +1,10 @@
+---
+title: "greek_desc"
+output: html_document
+---
+### Phil "The Greek" Signorle
+**Hometown:** A Land Far Far Away  
+**Record:** 31 - 34  
+**Skill:** Finding the Nearest Strip Club
+
+Is Philly Flacco elite? The Greek was 50,000 feet in the air when he won the coveted Golden Delakas. A well cultured GM, has found success and is certainly trending up since the infamous "Roy Helu" moment. His teams are often built around top wideouts, and suspect running backs but it is a formula that has worked in the past so who are we to judge. RMFWoGS

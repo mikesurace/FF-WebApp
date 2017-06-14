@@ -1,0 +1,11 @@
+---
+title: "poppy_desc"
+output: html_document
+---
+
+### Jesse "Poppy's Champion" Signa
+**Hometown:** Bethpage  
+**Record:** 41 - 24  
+**Skill:**   
+
+The Poppy's Champion regards himself as the top ranked GM in the Inebo and, well, the statistics back this up. Poppy's Champion has accumulated 41 regular season wins, 5 playoff appearances and one championship. Impressive. You know what is also impressive? Poppy's infatuation with PEDGE. Poppy and PEDGE first came across each other during Middle School basketball and he hasn't left their side since. With another winless postseason, it might be time for Poppy to drop the paw on his front office.
