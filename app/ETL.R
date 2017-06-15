@@ -32,6 +32,21 @@ playoff_data$Byes <- ifelse(playoff_data$Opponent == "Bye",1,0)
 playoff_data$Championships <- ifelse(playoff_data$Round != "Final",0,ifelse(playoff_data$Outcome == "Win",1,0))
 playoff_data$Playoff_Apperances <- ifelse(playoff_data$Round == "Quarter Final",1,0)
 
+#Clean Draft Data
+draft <- draft %>% 
+          select(-X,-X.1,-X.2) %>%
+          plyr::rename(c('Team' = 'NFL_Team','Manager' = 'Team'))
+draft$WR <- ifelse(draft$POS == "WR",1,0)
+draft$RB <- ifelse(draft$POS == "RB",1,0)
+draft$QB <- ifelse(draft$POS == "QB",1,0)
+draft$TE <- ifelse(draft$POS == "TE",1,0)
+draft$DEF <- ifelse(draft$POS == "DEF",1,0)
+draft$K <- ifelse(draft$POS == "K",1,0)
+
+#draft_cln <- draft %>% 
+#  mutate(name = paste(substr(Player,1,1),stringr::word(Player,2),sep = '.')) %>%
+#  select(-X,-X.1,-X.2,-Player)
+
 #################################################################################
 #####################  Regular Season Statistics ################################
 ################################################################################# 
@@ -108,28 +123,20 @@ rankings_final <- rankings[c(1,23,2,3,5,7,13,14,16,17)] %>%
 ###############Calculate Data for Draft Analysis###########
 ###########################################################
 
-all_seasons <- bind_rows(players2015,players2016)
-
 #Calculate fantasy points
-gamestats <- all_seasons %>%
-    mutate(pass_pts = passyds/25 + pass.tds*4 - pass.ints*2 + pass.twoptm*2,
-           rush_pts = rushyds/10 + rushtds*6 + rush.twoptm*2 - fumbslost*2,
-           rec_pts = recept*.5 + recyds/10 + rec.tds*6 + rec.twoptm*2,
-           spec_pts = kickret.tds*6 + puntret.tds*6,
-           total_pts = pass_pts + rush_pts + rec_pts + spec_pts) %>%
-    select(Season,Team,name, pass_pts,rush_pts,rec_pts,spec_pts, total_pts)
-  
-agg_stats <- gamestats %>% 
-    group_by(Season, name) %>% 
-    summarise(season_pts = sum(total_pts)) %>%
-    filter(season_pts > 0)
+# gamestats <- all_seasons %>%
+#     mutate(pass_pts = passyds/25 + pass.tds*4 - pass.ints*2 + pass.twoptm*2,
+#            rush_pts = rushyds/10 + rushtds*6 + rush.twoptm*2 - fumbslost*2,
+#            rec_pts = recept*.5 + recyds/10 + rec.tds*6 + rec.twoptm*2,
+#            spec_pts = kickret.tds*6 + puntret.tds*6,
+#            total_pts = pass_pts + rush_pts + rec_pts + spec_pts) %>%
+#     select(Season,Team,name, pass_pts,rush_pts,rec_pts,spec_pts, total_pts)
+#   
+# agg_stats <- gamestats %>% 
+#     group_by(Season, name) %>% 
+#     summarise(season_pts = sum(total_pts)) %>%
+#     filter(season_pts > 0)
 
-#Clean draft data and merge with fantasy points
-draft_cln <- draft %>% 
-              mutate(name = paste(substr(Player,1,1),stringr::word(Player,2),sep = '.')) %>%
-              select(-X,-X.1,-X.2,-Player)
-
-full_draft <- left_join(draft_cln,agg_stats, by = c("Year" = "Season","name" = "name"))
 ############################################################
 #####################Save Data#############################
 ##########################################################
@@ -137,5 +144,5 @@ full_draft <- left_join(draft_cln,agg_stats, by = c("Year" = "Season","name" = "
 team_list <- reg_data$Team %>% unique
 year_list <- c(2012,2013,2014,2015,2016)
 
-save(full_data, playoffs_final, rankings_final, Reg_Data_01, reg_statistics,reg_final, 
+save(full_data, playoffs_final, rankings_final, Reg_Data_01, reg_statistics,reg_final,draft, 
         team_list, year_list, file = 'data/all.RData')

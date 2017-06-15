@@ -23,7 +23,7 @@ shinyUI(fluidPage(
                                fluidPage(fluidRow(column(width= 4,
                                           includeMarkdown("html/rankings.Rmd")),
                                          column(width = 8, 
-                                                  DT::dataTableOutput('PlayerProjections'))))),
+                                                  DT::dataTableOutput('TeamRankings'))))),
                       
                       
                       tabPanel("Game Logs", icon = icon('google'),
@@ -100,8 +100,14 @@ shinyUI(fluidPage(
                                               column(width = 4, offset = 1, img(src = "jerry.jpg",width = 300, height = 300))),
                                     br(), br(), br())),
                  
-                 tabPanel("Draft Day Toolkit")
-                 )
-))
+                 tabPanel("Draft Day",
+                          fluidPage(fluidRow(column(width = 3,
+                                                    selectInput('draftRound',"Select a Round:",c(1:12)))),
+                                    fluidRow(column(width = 6,
+                                                    DT::dataTableOutput('Draft')),
+                                             column(width = 6,
+                                                    plotlyOutput('TrendRound'))))
+                 
+))))
 
 
