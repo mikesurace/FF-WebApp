@@ -1,337 +1,901 @@
-Year,Round,Pick #,Manager,Player,Team,POS,,,
-2016,1,1,Chaz,Antonio Brown,Pit,WR,,,
-2016,1,2,Mike,Julio Jones,Atl,WR,,,
-2016,1,3,Rob,Odell Beckham Jr.,NYG,WR,,,
-2016,1,4,Zach,Todd Gurley,LAR,RB,,,
-2016,1,5,Sean,Adrian Peterson,NO,RB,,,
-2016,1,6,Cory,David Johnson,Ari,RB,,,
-2016,1,7,Trev,Le'Veon Bell,Pit,RB,,,
-2016,1,8,Brandon,A.J. Green,Cin,WR,,,
-2016,1,9,Jay,Allen Robinson,Jax,WR,,,
-2016,1,10,Sammy,DeAndre Hopkins,Hou,WR,,,
-2016,1,11,Fred,Randall Cobb,GB,WR,,,
-2016,1,12,Kevin,Brandon Marshall,NYG,WR,,,
-2016,2,13,Kevin,Dez Bryant,Dal,WR,,,
-2016,2,14,Fred,C.J. Anderson,Den,RB,,,
-2016,2,15,Sammy,Ezekiel Elliott,Dal,RB,,,
-2016,2,16,Jay,Jordy Nelson,GB,WR,,,
-2016,2,17,Brandon,T.Y. Hilton,Ind,WR,,,
-2016,2,18,Trev,Amari Cooper,Oak,WR,,,
-2016,2,19,Cory,Mike Evans,TB,WR,,,
-2016,2,20,Sean,Alshon Jeffery,Phi,WR,,,
-2016,2,21,Zach,Jamaal Charles,Den,RB,,,
-2016,2,22,Rob,LeSean McCoy,Buf,RB,,,
-2016,2,23,Mike,Keenan Allen,LAC,WR,,,
-2016,2,24,Chaz,Devonta Freeman,Atl,RB,,,
-2016,3,25,Chaz,Demaryius Thomas,Den,WR,,,
-2016,3,26,Mike,Mark Ingram,NO,RB,,,
-2016,3,27,Rob,Kelvin Benjamin,Car,WR,,,
-2016,3,28,Zach,Brandin Cooks,NE,WR,,,
-2016,3,29,Sean,Cam Newton,Car,QB,,,
-2016,3,30,Cory,Thomas Rawls,Sea,RB,,,
-2016,3,31,Trev,Jordan Reed,Was,TE,,,
-2016,3,32,Brandon,Aaron Rodgers,GB,QB,,,
-2016,3,33,Jay,Eddie Lacy,Sea,RB,,,
-2016,3,34,Sammy,Sammy Watkins,Buf,WR,,,
-2016,3,35,Fred,Golden Tate,Det,WR,,,
-2016,3,36,Kevin,Lamar Miller,Hou,RB,,,
-2016,4,37,Kevin,Rob Gronkowski,NE,TE,,,
-2016,4,38,Fred,Doug Martin,TB,RB,,,
-2016,4,39,Sammy,Jarvis Landry,Mia,WR,,,
-2016,4,40,Jay,Ben Roethlisberger,Pit,QB,,,
-2016,4,41,Brandon,Latavius Murray,Min,RB,,,
-2016,4,42,Trev,Jeremy Maclin,KC,WR,,,
-2016,4,43,Cory,Eric Decker,NYJ,WR,,,
-2016,4,44,Sean,Julian Edelman,NE,WR,,,
-2016,4,45,Zach,Drew Brees,NO,QB,,,
-2016,4,46,Rob,Donte Moncrief,Ind,WR,,,
-2016,4,47,Mike,Josh Gordon,Cle,WR,,,
-2016,4,48,Chaz,Andrew Luck,Ind,QB,,,
-2016,5,49,Chaz,Greg Olsen,Car,TE,,,
-2016,5,50,Mike,Arian Foster,Mia,RB,,,
-2016,5,51,Rob,Carlos Hyde,SF,RB,,,
-2016,5,52,Zach,Allen Hurns,Jax,WR,,,
-2016,5,53,Sean,Jonathan Stewart,Car,RB,,,
-2016,5,54,Cory,Emmanuel Sanders,Den,WR,,,
-2016,5,55,Trev,Dion Lewis,NE,RB,,,
-2016,5,56,Brandon,Matt Forte,NYJ,RB,,,
-2016,5,57,Jay,Doug Baldwin,Sea,WR,,,
-2016,5,58,Sammy,Jeremy Hill,Cin,RB,,,
-2016,5,59,Fred,Jordan Matthews,Phi,WR,,,
-2016,5,60,Kevin,Melvin Gordon,LAC,RB,,,
-2016,6,61,Kevin,Vincent Jackson,TB,WR,,,
-2016,6,62,Fred,Delanie Walker,Ten,TE,,,
-2016,6,63,Sammy,Travis Kelce,KC,TE,,,
-2016,6,64,Jay,DeAngelo Williams,Pit,RB,,,
-2016,6,65,Brandon,John Brown,Ari,WR,,,
-2016,6,66,Trev,Matt Jones,Was,RB,,,
-2016,6,67,Cory,Russell Wilson,Sea,QB,,,
-2016,6,68,Sean,Tyler Eifert,Cin,TE,,,
-2016,6,69,Zach,Larry Fitzgerald,Ari,WR,,,
-2016,6,70,Rob,Tom Brady,NE,QB,,,
-2016,6,71,Mike,Michael Crabtree,Oak,WR,,,
-2016,6,72,Chaz,DeMarco Murray,Ten,RB,,,
-2016,7,73,Chaz,DeVante Parker,Mia,WR,,,
-2016,7,74,Mike,Blake Bortles,Jax,QB,,,
-2016,7,75,Rob,Michael Floyd,Min,WR,,,
-2016,7,76,Zach,Carolina,Car,DEF,,,
-2016,7,77,Sean,DeSean Jackson,TB,WR,,,
-2016,7,78,Cory,Marvin Jones Jr.,Det,WR,,,
-2016,7,79,Trev,Stefon Diggs,Min,WR,,,
-2016,7,80,Brandon,Jay Ajayi,Mia,RB,,,
-2016,7,81,Jay,Danny Woodhead,Bal,RB,,,
-2016,7,82,Sammy,Jeremy Langford,Chi,RB,,,
-2016,7,83,Fred,Tyler Lockett,Sea,WR,,,
-2016,7,84,Kevin,Darren Sproles,Phi,RB,,,
-2016,8,85,Kevin,James Starks,GB,RB,,,
-2016,8,86,Fred,Giovani Bernard,Cin,RB,,,
-2016,8,87,Sammy,Markus Wheaton,Chi,WR,,,
-2016,8,88,Jay,Devin Funchess,Car,WR,,,
-2016,8,89,Brandon,Coby Fleener,NO,TE,,,
-2016,8,90,Trev,Sterling Shepard,NYG,WR,,,
-2016,8,91,Cory,Ryan Mathews,Phi,RB,,,
-2016,8,92,Sean,Rashad Jennings,NYG,RB,,,
-2016,8,93,Zach,Tavon Austin,LAR,WR,,,
-2016,8,94,Rob,Carson Palmer,Ari,QB,,,
-2016,8,95,Mike,Ameer Abdullah,Det,RB,,,
-2016,8,96,Chaz,Charles Sims,TB,RB,,,
-2016,9,97,Chaz,Dorial Green-Beckham,Phi,WR,,,
-2016,9,98,Mike,Steve Smith Sr.,Bal,WR,,,
-2016,9,99,Rob,Duke Johnson Jr.,Cle,RB,,,
-2016,9,100,Zach,Gary Barnidge,Cle,TE,,,
-2016,9,101,Sean,Stephen Gostkowski,NE,K,,,
-2016,9,102,Cory,Antonio Gates,LAC,TE,,,
-2016,9,103,Trev,Frank Gore,Ind,RB,,,
-2016,9,104,Brandon,Corey Coleman,Cle,WR,,,
-2016,9,105,Jay,Jared Cook,Oak,TE,,,
-2016,9,106,Sammy,Chris Ivory,Jax,RB,,,
-2016,9,107,Fred,Tevin Coleman,Atl,RB,,,
-2016,9,108,Kevin,Derek Carr,Oak,QB,,,
-2016,10,109,Kevin,Josh Doctson,Was,WR,,,
-2016,10,110,Fred,Kevin White,Chi,WR,,,
-2016,10,111,Sammy,Denver,Den,DEF,,,
-2016,10,112,Jay,T.J. Yeldon,Jax,RB,,,
-2016,10,113,Brandon,Jimmy Graham,Sea,TE,,,
-2016,10,114,Trev,Kirk Cousins,Was,QB,,,
-2016,10,115,Cory,Willie Snead,NO,WR,,,
-2016,10,116,Sean,Seattle,Sea,DEF,,,
-2016,10,117,Zach,Laquon Treadwell,Min,WR,,,
-2016,10,118,Rob,Zach Ertz,Phi,TE,,,
-2016,10,119,Mike,Julius Thomas,Mia,TE,,,
-2016,10,120,Chaz,Travis Benjamin,LAC,WR,,,
-2016,11,121,Chaz,Javorius Allen,Bal,RB,,,
-2016,11,122,Mike,Justin Forsett,Den,RB,,,
-2016,11,123,Rob,Mason Crosby,GB,K,,,
-2016,11,124,Zach,Bilal Powell,NYJ,RB,,,
-2016,11,125,Sean,Victor Cruz,NYG,WR,,,
-2016,11,126,Cory,Chris Johnson,Ari,RB,,,
-2016,11,127,Trev,LeGarrette Blount,NE,RB,,,
-2016,11,128,Brandon,Kansas City,KC,DEF,,,
-2016,11,129,Jay,Houston,Hou,DEF,,,
-2016,11,130,Sammy,Darren McFadden,Dal,RB,,,
-2016,11,131,Fred,Michael Thomas,NO,WR,,,
-2016,11,132,Kevin,Green Bay,GB,DEF,,,
-2016,12,133,Kevin,Mike Wallace,Bal,WR,,,
-2016,12,134,Fred,Derrick Henry,Ten,RB,,,
-2016,12,135,Sammy,Kamar Aiken,Ind,WR,,,
-2016,12,136,Jay,Ladarius Green,Pit,TE,,,
-2016,12,137,Brandon,New York,NYJ,DEF,,,
-2016,12,138,Trev,Torrey Smith,Phi,WR,,,
-2016,12,139,Cory,Nelson Agholor,Phi,WR,,,
-2016,12,140,Sean,Cameron Artis-Payne,Car,RB,,,
-2016,12,141,Zach,Steven Hauschka,Buf,K,,,
-2016,12,142,Rob,Pierre Garcon,SF,WR,,,
-2016,12,143,Mike,Arizona,Ari,DEF,,,
-2016,12,144,Chaz,Justin Tucker,Bal,K,,,
-2016,13,145,Chaz,New England,NE,DEF,,,
-2016,13,146,Mike,Rishard Matthews,Ten,WR,,,
-2016,13,147,Rob,Karlos Williams,Pit,RB,,,
-2016,13,148,Zach,Tyler Boyd,Cin,WR,,,
-2016,13,149,Sean,Jason Witten,Dal,TE,,,
-2016,13,150,Cory,Philadelphia,Phi,DEF,,,
-2016,13,151,Trev,Theo Riddick,Det,RB,,,
-2016,13,152,Brandon,Ryan Tannehill,Mia,QB,,,
-2016,13,153,Jay,Jameis Winston,TB,QB,,,
-2016,13,154,Sammy,Dan Bailey,Dal,K,,,
-2016,13,155,Fred,Joe Flacco,Bal,QB,,,
-2016,13,156,Kevin,Ted Ginn Jr.,NO,WR,,,
-2016,14,157,Kevin,Graham Gano,Car,K,,,
-2016,14,158,Fred,Marcus Mariota,Ten,QB,,,
-2016,14,159,Sammy,Tyrod Taylor,Buf,QB,,,
-2016,14,160,Jay,Brandon McManus,Den,K,,,
-2016,14,161,Brandon,Chris Boswell,Pit,K,,,
-2016,14,162,Trev,Zach Miller,Chi,TE,,,
-2016,14,163,Cory,Cairo Santos,KC,K,,,
-2016,14,164,Sean,Matt Asiata,Min,RB,,,
-2016,14,165,Zach,Philip Rivers,LAC,QB,,,
-2016,14,166,Rob,Phillip Dorsett,Ind,WR,,,
-2016,14,167,Mike,Chandler Catanzaro,NYJ,K,,,
-2016,14,168,Chaz,Sammie Coates,Pit,WR,,,
-2015,1,1,Rob,Adrian Peterson,NO,RB,,,
-2015,1,2,Cory,Le'Veon Bell,Pit,RB,,,
-2015,1,3,Ty,Jamaal Charles,Den,RB,,,
-2015,1,4,Jay,Eddie Lacy,Sea,RB,,,
-2015,1,5,Kevin,Antonio Brown,Pit,WR,,,
-2015,1,6,Mike,Dez Bryant,Dal,WR,,,
-2015,1,7,Trev,Marshawn Lynch,Oak,RB,,,
-2015,1,8,Zach,Demaryius Thomas,Den,WR,,,
-2015,1,9,Chaz,DeMarco Murray,Ten,RB,,,
-2015,1,10,Sammy,Odell Beckham Jr.,NYG,WR,,,
-2015,1,11,Fred,Aaron Rodgers,GB,QB,,,
-2015,1,12,Sean,Rob Gronkowski,NE,TE,,,
-2015,2,13,Sean,LeGarrette Blount,NE,RB,,,
-2015,2,14,Fred,Mike Evans,TB,WR,,,
-2015,2,15,Sammy,Jordy Nelson,GB,WR,,,
-2015,2,16,Chaz,Randall Cobb,GB,WR,,,
-2015,2,17,Zach,Julio Jones,Atl,WR,,,
-2015,2,18,Trev,LeSean McCoy,Buf,RB,,,
-2015,2,19,Mike,Andrew Luck,Ind,QB,,,
-2015,2,20,Kevin,Matt Forte,NYJ,RB,,,
-2015,2,21,Jay,C.J. Anderson,Den,RB,,,
-2015,2,22,Ty,Calvin Johnson,Det,WR,,,
-2015,2,23,Cory,A.J. Green,Cin,WR,,,
-2015,2,24,Rob,Jeremy Hill,Cin,RB,,,
-2015,3,25,Rob,Jimmy Graham,Sea,TE,,,
-2015,3,26,Cory,Justin Forsett,Den,RB,,,
-2015,3,27,Ty,Emmanuel Sanders,Den,WR,,,
-2015,3,28,Jay,Alshon Jeffery,Phi,WR,,,
-2015,3,29,Kevin,Alfred Morris,Dal,RB,,,
-2015,3,30,Mike,DeAndre Hopkins,Hou,WR,,,
-2015,3,31,Trev,Andre Johnson,Hou,WR,,,
-2015,3,32,Zach,Melvin Gordon,LAC,RB,,,
-2015,3,33,Chaz,Lamar Miller,Hou,RB,,,
-2015,3,34,Sammy,Mark Ingram,NO,RB,,,
-2015,3,35,Fred,T.Y. Hilton,Ind,WR,,,
-2015,3,36,Sean,Julian Edelman,NE,WR,,,
-2015,4,37,Sean,Tom Brady,NE,QB,,,
-2015,4,38,Fred,Jordan Matthews,Phi,WR,,,
-2015,4,39,Sammy,Martavis Bryant,Pit,WR,,,
-2015,4,40,Chaz,Brandin Cooks,NE,WR,,,
-2015,4,41,Zach,Carlos Hyde,SF,RB,,,
-2015,4,42,Trev,Peyton Manning,Den,QB,,,
-2015,4,43,Mike,Frank Gore,Ind,RB,,,
-2015,4,44,Kevin,Golden Tate,Det,WR,,,
-2015,4,45,Jay,Allen Robinson,Jax,WR,,,
-2015,4,46,Ty,Keenan Allen,LAC,WR,,,
-2015,4,47,Cory,DeSean Jackson,TB,WR,,,
-2015,4,48,Rob,Amari Cooper,Oak,WR,,,
-2015,5,49,Rob,Nelson Agholor,Phi,WR,,,
-2015,5,50,Cory,Jonathan Stewart,Car,RB,,,
-2015,5,51,Ty,Latavius Murray,Min,RB,,,
-2015,5,52,Jay,Travis Kelce,KC,TE,,,
-2015,5,53,Kevin,Brandon Marshall,NYG,WR,,,
-2015,5,54,Mike,Ameer Abdullah,Det,RB,,,
-2015,5,55,Trev,Jeremy Maclin,KC,WR,,,
-2015,5,56,Zach,Vincent Jackson,TB,WR,,,
-2015,5,57,Chaz,Charles Johnson,Car,WR,,,
-2015,5,58,Sammy,Todd Gurley,LAR,RB,,,
-2015,5,59,Fred,Joseph Randle,Dal,RB,,,
-2015,5,60,Sean,Brandon LaFell,Cin,WR,,,
-2015,6,61,Sean,Jonas Gray,Jax,RB,,,
-2015,6,62,Fred,Greg Olsen,Car,TE,,,
-2015,6,63,Sammy,Andre Ellington,Ari,RB,,,
-2015,6,64,Chaz,C.J. Spiller,KC,RB,,,
-2015,6,65,Zach,Victor Cruz,NYG,WR,,,
-2015,6,66,Trev,Martellus Bennett,GB,TE,,,
-2015,6,67,Mike,Arian Foster,Mia,RB,,,
-2015,6,68,Kevin,Mike Wallace,Bal,WR,,,
-2015,6,69,Jay,Ben Roethlisberger,Pit,QB,,,
-2015,6,70,Ty,Russell Wilson,Sea,QB,,,
-2015,6,71,Cory,Sammy Watkins,Buf,WR,,,
-2015,6,72,Rob,Steve Smith Sr.,Bal,WR,,,
-2015,7,73,Rob,Tony Romo,Dal,QB,,,
-2015,7,74,Cory,Zach Ertz,Phi,TE,,,
-2015,7,75,Ty,Seattle,Sea,DEF,,,
-2015,7,76,Jay,T.J. Yeldon,Jax,RB,,,
-2015,7,77,Kevin,Rashad Jennings,NYG,RB,,,
-2015,7,78,Mike,Roddy White,Atl,WR,,,
-2015,7,79,Trev,Jarvis Landry,Mia,WR,,,
-2015,7,80,Zach,Matt Ryan,Atl,QB,,,
-2015,7,81,Chaz,Larry Fitzgerald,Ari,WR,,,
-2015,7,82,Sammy,Drew Brees,NO,QB,,,
-2015,7,83,Fred,Joique Bell,Det,RB,,,
-2015,7,84,Sean,New England,NE,DEF,,,
-2015,8,85,Sean,Stephen Gostkowski,NE,K,,,
-2015,8,86,Fred,Doug Martin,TB,RB,,,
-2015,8,87,Sammy,Jordan Cameron,Mia,TE,,,
-2015,8,88,Chaz,Jason Witten,Dal,TE,,,
-2015,8,89,Zach,Alfred Blue,Hou,RB,,,
-2015,8,90,Trev,Houston,Hou,DEF,,,
-2015,8,91,Mike,Eric Decker,NYJ,WR,,,
-2015,8,92,Kevin,Michael Floyd,Min,WR,,,
-2015,8,93,Jay,Davante Adams,GB,WR,,,
-2015,8,94,Ty,Chris Ivory,Jax,RB,,,
-2015,8,95,Cory,John Brown,Ari,WR,,,
-2015,8,96,Rob,Ryan Mathews,Phi,RB,,,
-2015,9,97,Rob,Anquan Boldin,Det,WR,,,
-2015,9,98,Cory,Shane Vereen,NYG,RB,,,
-2015,9,99,Ty,Delanie Walker,Ten,TE,,,
-2015,9,100,Jay,Pierre Garcon,SF,WR,,,
-2015,9,101,Kevin,Eli Manning,NYG,QB,,,
-2015,9,102,Mike,Giovani Bernard,Cin,RB,,,
-2015,9,103,Trev,Isaiah Crowell,Cle,RB,,,
-2015,9,104,Zach,Julius Thomas,Mia,TE,,,
-2015,9,105,Chaz,Matthew Stafford,Det,QB,,,
-2015,9,106,Sammy,Torrey Smith,Phi,WR,,,
-2015,9,107,Fred,Darren McFadden,Dal,RB,,,
-2015,9,108,Sean,Danny Amendola,NE,WR,,,
-2015,10,109,Sean,James White,NE,RB,,,
-2015,10,110,Fred,Kendall Wright,Chi,WR,,,
-2015,10,111,Sammy,Tre Mason,LAR,RB,,,
-2015,10,112,Chaz,Devonta Freeman,Atl,RB,,,
-2015,10,113,Zach,Philadelphia,Phi,DEF,,,
-2015,10,114,Trev,Eddie Royal,Chi,WR,,,
-2015,10,115,Mike,Devin Funchess,Car,WR,,,
-2015,10,116,Kevin,Reggie Bush,Buf,RB,,,
-2015,10,117,Jay,Buffalo,Buf,DEF,,,
-2015,10,118,Ty,Marques Colston,NO,WR,,,
-2015,10,119,Cory,Cam Newton,Car,QB,,,
-2015,10,120,Rob,Kenny Stills,Mia,WR,,,
-2015,11,121,Rob,Cody Latimer,Den,WR,,,
-2015,11,122,Cory,Mohamed Sanu,Atl,WR,,,
-2015,11,123,Ty,Bishop Sankey,Min,RB,,,
-2015,11,124,Jay,Breshad Perriman,Bal,WR,,,
-2015,11,125,Kevin,Darren Sproles,Phi,RB,,,
-2015,11,126,Mike,Tevin Coleman,Atl,RB,,,
-2015,11,127,Trev,Knile Davis,Pit,RB,,,
-2015,11,128,Zach,Terrance Williams,Dal,WR,,,
-2015,11,129,Chaz,Adam Vinatieri,Ind,K,,,
-2015,11,130,Sammy,Los Angeles,LAR,DEF,,,
-2015,11,131,Fred,Charles Sims,TB,RB,,,
-2015,11,132,Sean,Brandon Bolden,NE,RB,,,
-2015,12,133,Sean,Jimmy Garoppolo,NE,QB,,,
-2015,12,134,Fred,Markus Wheaton,Chi,WR,,,
-2015,12,135,Sammy,Steven Hauschka,Buf,K,,,
-2015,12,136,Chaz,David Cobb,Chi,RB,,,
-2015,12,137,Zach,Dan Bailey,Dal,K,,,
-2015,12,138,Trev,Michael Crabtree,Oak,WR,,,
-2015,12,139,Mike,Dwayne Allen,NE,TE,,,
-2015,12,140,Kevin,Owen Daniels,Den,TE,,,
-2015,12,141,Jay,DeAngelo Williams,Pit,RB,,,
-2015,12,142,Ty,Marvin Jones Jr.,Det,WR,,,
-2015,12,143,Cory,Ronnie Hillman,LAC,RB,,,
-2015,12,144,Rob,Arizona,Ari,DEF,,,
-2015,13,145,Rob,Mason Crosby,GB,K,,,
-2015,13,146,Cory,Sam Bradford,Min,QB,,,
-2015,13,147,Ty,Kyle Rudolph,Min,TE,,,
-2015,13,148,Jay,Connor Barth,Chi,K,,,
-2015,13,149,Kevin,Ryan Tannehill,Mia,QB,,,
-2015,13,150,Mike,Stevie Johnson,LAC,WR,,,
-2015,13,151,Trev,Fred Jackson,Sea,RB,,,
-2015,13,152,Zach,Philip Rivers,LAC,QB,,,
-2015,13,153,Chaz,Marcus Mariota,Ten,QB,,,
-2015,13,154,Sammy,Brian Quick,Was,WR,,,
-2015,13,155,Fred,Danny Woodhead,Bal,RB,,,
-2015,13,156,Sean,Scott Chandler,NE,TE,,,
-2015,14,157,Sean,Fred Davis,NE,TE,,,
-2015,14,158,Fred,James Starks,GB,RB,,,
-2015,14,159,Sammy,Colin Kaepernick,SF,QB,,,
-2015,14,160,Chaz,New York,NYJ,DEF,,,
-2015,14,161,Zach,Duke Johnson Jr.,Cle,RB,,,
-2015,14,162,Trev,Doug Baldwin,Sea,WR,,,
-2015,14,163,Mike,Daniel Herron,Buf,RB,,,
-2015,14,164,Kevin,Andrew Hawkins,Cle,WR,,,
-2015,14,165,Jay,Jameis Winston,TB,QB,,,
-2015,14,166,Ty,Blair Walsh,Sea,K,,,
-2015,14,167,Cory,Justin Tucker,Bal,K,,,
-2015,14,168,Rob,Matt Asiata,Min,RB,,,
+Year,Round,Pick,Player,YahooTeam,Team,POS
+2016,1,1,Antonio Brown(Pit - WR),Black Mass,Black Mass,WR
+2016,1,2,Odell Beckham Jr.(NYG - WR),Surace,Surace,WR
+2016,1,3,Julio Jones(Atl - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,1,4,David Johnson(Ari - RB),Milk Man,Milk Man,RB
+2016,1,5,Todd Gurley(LAR - RB),Dune Squad,Dune Squad,RB
+2016,1,6,Rob Gronkowski(NE - TE),Poppy's Cham...,Poppy's Champions,TE
+2016,1,7,DeAndre Hopkins(Hou - WR),GhostingTheL...,GhostingTheLombardi,WR
+2016,1,8,Adrian Peterson(NO - RB),The Black Sh...,The Black Shepherd,RB
+2016,1,9,Lamar Miller(Hou - RB),The People's...,The People's Champ,RB
+2016,1,10,Jamaal Charles(Den - RB),The Mighty A...,The Mighty Albatross,RB
+2016,1,11,A.J. Green(Cin - WR),richard,richard,WR
+2016,1,12,Allen Robinson(Jax - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,2,13,Ezekiel Elliott(Dal - RB),Commissioner Gordon,Commissioner Gordon,RB
+2016,2,14,Dez Bryant(Dal - WR),richard,richard,WR
+2016,2,15,Le'Veon Bell(Pit - RB),The Mighty A...,The Mighty Albatross,RB
+2016,2,16,Eddie Lacy(Sea - RB),The People's...,The People's Champ,RB
+2016,2,17,Devonta Freeman(Atl - RB),The Black Sh...,The Black Shepherd,RB
+2016,2,18,Brandon Marshall(NYG - WR),GhostingTheL...,GhostingTheLombardi,WR
+2016,2,19,LeSean McCoy(Buf - RB),Poppy's Cham...,Poppy's Champions,RB
+2016,2,20,Amari Cooper(Oak - WR),Dune Squad,Dune Squad,WR
+2016,2,21,Mike Evans(TB - WR),Milk Man,Milk Man,WR
+2016,2,22,Keenan Allen(LAC - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,2,23,Mark Ingram(NO - RB),Surace,Surace,RB
+2016,2,24,Jordy Nelson(GB - WR),Black Mass,Black Mass,WR
+2016,3,25,Doug Martin(TB - RB),Black Mass,Black Mass,RB
+2016,3,26,Demaryius Thomas(Den - WR),Surace,Surace,WR
+2016,3,27,Thomas Rawls(Sea - RB),The Wolf of ...,The Wolf of Greek St,RB
+2016,3,28,T.Y. Hilton(Ind - WR),Milk Man,Milk Man,WR
+2016,3,29,Jarvis Landry(Mia - WR),Dune Squad,Dune Squad,WR
+2016,3,30,Cam Newton(Car - QB),Poppy's Cham...,Poppy's Champions,QB
+2016,3,31,Brandin Cooks(NE - WR),GhostingTheL...,GhostingTheLombardi,WR
+2016,3,32,Alshon Jeffery(Phi - WR),The Black Sh...,The Black Shepherd,WR
+2016,3,33,Matt Forte(NYJ - RB),The People's...,The People's Champ,RB
+2016,3,34,Sammy Watkins(Buf - WR),The Mighty A...,The Mighty Albatross,WR
+2016,3,35,Jordan Reed(Was - TE),richard,richard,TE
+2016,3,36,Randall Cobb(GB - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,4,37,C.J. Anderson(Den - RB),Commissioner Gordon,Commissioner Gordon,RB
+2016,4,38,Carlos Hyde(SF - RB),richard,richard,RB
+2016,4,39,Greg Olsen(Car - TE),The Mighty A...,The Mighty Albatross,TE
+2016,4,40,Julian Edelman(NE - WR),The People's...,The People's Champ,WR
+2016,4,41,DeMarco Murray(Ten - RB),The Black Sh...,The Black Shepherd,RB
+2016,4,42,Aaron Rodgers(GB - QB),GhostingTheL...,GhostingTheLombardi,QB
+2016,4,43,Latavius Murray(Min - RB),Poppy's Cham...,Poppy's Champions,RB
+2016,4,44,Andrew Luck(Ind - QB),Dune Squad,Dune Squad,QB
+2016,4,45,Jeremy Hill(Cin - RB),Milk Man,Milk Man,RB
+2016,4,46,Ben Roethlisberger(Pit - QB),The Wolf of ...,The Wolf of Greek St,QB
+2016,4,47,Donte Moncrief(Ind - WR),Surace,Surace,WR
+2016,4,48,Golden Tate(Det - WR),Black Mass,Black Mass,WR
+2016,5,49,Jonathan Stewart(Car - RB),Black Mass,Black Mass,RB
+2016,5,50,Ryan Mathews(Phi - RB),Surace,Surace,RB
+2016,5,51,Jeremy Maclin(Bal - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,5,52,Kelvin Benjamin(Car - WR),Milk Man,Milk Man,WR
+2016,5,53,Larry Fitzgerald(Ari - WR),Dune Squad,Dune Squad,WR
+2016,5,54,Eric Decker(NYJ - WR),Poppy's Cham...,Poppy's Champions,WR
+2016,5,55,Frank Gore(Ind - RB),GhostingTheL...,GhostingTheLombardi,RB
+2016,5,56,Carson Palmer(Ari - QB),The Black Sh...,The Black Shepherd,QB
+2016,5,57,Michael Floyd(Min - WR),The People's...,The People's Champ,WR
+2016,5,58,Jordan Matthews(Phi - WR),The Mighty A...,The Mighty Albatross,WR
+2016,5,59,Russell Wilson(Sea - QB),richard,richard,QB
+2016,5,60,Drew Brees(NO - QB),Commissioner Gordon,Commissioner Gordon,QB
+2016,6,61,Doug Baldwin(Sea - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,6,62,DeVante Parker(Mia - WR),richard,richard,WR
+2016,6,63,Arian Foster(Mia - RB),The Mighty A...,The Mighty Albatross,RB
+2016,6,64,Delanie Walker(Ten - TE),The People's...,The People's Champ,TE
+2016,6,65,Emmanuel Sanders(Den - WR),The Black Sh...,The Black Shepherd,WR
+2016,6,66,Jeremy Langford(Chi - RB),GhostingTheL...,GhostingTheLombardi,RB
+2016,6,67,Allen Hurns(Jax - WR),Poppy's Cham...,Poppy's Champions,WR
+2016,6,68,Giovani Bernard(Cin - RB),Dune Squad,Dune Squad,RB
+2016,6,69,Eli Manning(NYG - QB),Milk Man,Milk Man,QB
+2016,6,70,Melvin Gordon(LAC - RB),The Wolf of ...,The Wolf of Greek St,RB
+2016,6,71,Marvin Jones Jr.(Det - WR),Surace,Surace,WR
+2016,6,72,Coby Fleener(NO - TE),Black Mass,Black Mass,TE
+2016,7,73,Rashad Jennings(NYG - RB),Black Mass,Black Mass,RB
+2016,7,74,Danny Woodhead(Bal - RB),Surace,Surace,RB
+2016,7,75,Travis Kelce(KC - TE),The Wolf of ...,The Wolf of Greek St,TE
+2016,7,76,Zach Ertz(Phi - TE),Milk Man,Milk Man,TE
+2016,7,77,Sterling Shepard(NYG - WR),Dune Squad,Dune Squad,WR
+2016,7,78,Michael Crabtree(Oak - WR),Poppy's Cham...,Poppy's Champions,WR
+2016,7,79,Duke Johnson Jr.(Cle - RB),GhostingTheL...,GhostingTheLombardi,RB
+2016,7,80,Tyler Eifert(Cin - TE),The Black Sh...,The Black Shepherd,TE
+2016,7,81,Kevin White(Chi - WR),The People's...,The People's Champ,WR
+2016,7,82,DeAngelo Williams(Pit - RB),The Mighty A...,The Mighty Albatross,RB
+2016,7,83,John Brown(Ari - WR),richard,richard,WR
+2016,7,84,Tyler Lockett(Sea - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,8,85,Charles Sims(TB - RB),Commissioner Gordon,Commissioner Gordon,RB
+2016,8,86,Ameer Abdullah(Det - RB),richard,richard,RB
+2016,8,87,Josh Gordon(Cle - WR),The Mighty A...,The Mighty Albatross,WR
+2016,8,88,Tom Brady(NE - QB),The People's...,The People's Champ,QB
+2016,8,89,Dion Lewis(NE - RB),The Black Sh...,The Black Shepherd,RB
+2016,8,90,Matt Jones(Was - RB),GhostingTheL...,GhostingTheLombardi,RB
+2016,8,91,Carolina(Car - DEF),Poppy's Cham...,Poppy's Champions,DEF
+2016,8,92,Derrick Henry(Ten - RB),Dune Squad,Dune Squad,RB
+2016,8,93,Jay Ajayi(Mia - RB),Milk Man,Milk Man,RB
+2016,8,94,Tavon Austin(LAR - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,8,95,Gary Barnidge(Cle - TE),Surace,Surace,TE
+2016,8,96,Denver(Den - DEF),Black Mass,Black Mass,DEF
+2016,9,97,Blake Bortles(Jax - QB),Black Mass,Black Mass,QB
+2016,9,98,LeGarrette Blount(Phi - RB),Surace,Surace,RB
+2016,9,99,Tevin Coleman(Atl - RB),The Wolf of ...,The Wolf of Greek St,RB
+2016,9,100,Stephen Gostkowski(NE - K),Milk Man,Milk Man,K
+2016,9,101,Arizona(Ari - DEF),Dune Squad,Dune Squad,DEF
+2016,9,102,Travis Benjamin(LAC - WR),Poppy's Cham...,Poppy's Champions,WR
+2016,9,103,Antonio Gates(LAC - TE),GhostingTheL...,GhostingTheLombardi,TE
+2016,9,104,DeSean Jackson(TB - WR),The Black Sh...,The Black Shepherd,WR
+2016,9,105,Seattle(Sea - DEF),The People's...,The People's Champ,DEF
+2016,9,106,Torrey Smith(Phi - WR),The Mighty A...,The Mighty Albatross,WR
+2016,9,107,Chris Ivory(Jax - RB),richard,richard,RB
+2016,9,108,Willie Snead(NO - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,10,109,Stefon Diggs(Min - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,10,110,Martellus Bennett(GB - TE),richard,richard,TE
+2016,10,111,Tyrod Taylor(Buf - QB),The Mighty A...,The Mighty Albatross,QB
+2016,10,112,Christine Michael(Ind - RB),The People's...,The People's Champ,RB
+2016,10,113,Dwayne Allen(NE - TE),The Black Sh...,The Black Shepherd,TE
+2016,10,114,Bilal Powell(NYJ - RB),GhostingTheL...,GhostingTheLombardi,RB
+2016,10,115,Jimmy Graham(Sea - TE),Poppy's Cham...,Poppy's Champions,TE
+2016,10,116,Sammie Coates(Pit - WR),Dune Squad,Dune Squad,WR
+2016,10,117,Jordan Howard(Chi - RB),Milk Man,Milk Man,RB
+2016,10,118,Jared Cook(Oak - TE),The Wolf of ...,The Wolf of Greek St,TE
+2016,10,119,Steve Smith Sr.(Bal - WR),Surace,Surace,WR
+2016,10,120,Corey Coleman(Cle - WR),Black Mass,Black Mass,WR
+2016,11,121,Graham Gano(Car - K),Black Mass,Black Mass,K
+2016,11,122,Michael Thomas(NO - WR),Surace,Surace,WR
+2016,11,123,Vincent Jackson(TB - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,11,124,DeAndre Washington(Oak - RB),Milk Man,Milk Man,RB
+2016,11,125,T.J. Yeldon(Jax - RB),Dune Squad,Dune Squad,RB
+2016,11,126,Rishard Matthews(Ten - WR),Poppy's Cham...,Poppy's Champions,WR
+2016,11,127,Julius Thomas(Mia - TE),GhostingTheL...,GhostingTheLombardi,TE
+2016,11,128,Mike Wallace(Bal - WR),The Black Sh...,The Black Shepherd,WR
+2016,11,129,James White(NE - RB),The People's...,The People's Champ,RB
+2016,11,130,Isaiah Crowell(Cle - RB),The Mighty A...,The Mighty Albatross,RB
+2016,11,131,Los Angeles(LAR - DEF),richard,richard,DEF
+2016,11,132,Jerick McKinnon(Min - RB),Commissioner Gordon,Commissioner Gordon,RB
+2016,12,133,Phillip Dorsett(Ind - WR),Commissioner Gordon,Commissioner Gordon,WR
+2016,12,134,Justin Tucker(Bal - K),richard,richard,K
+2016,12,135,Devin Funchess(Car - WR),The Mighty A...,The Mighty Albatross,WR
+2016,12,136,Charcandrick West(KC - RB),The People's...,The People's Champ,RB
+2016,12,137,Mohamed Sanu(Atl - WR),The Black Sh...,The Black Shepherd,WR
+2016,12,138,Bruce Ellington(SF - WR),GhostingTheL...,GhostingTheLombardi,WR
+2016,12,139,Justin Forsett(Den - RB),Poppy's Cham...,Poppy's Champions,RB
+2016,12,140,Jason Witten(Dal - TE),Dune Squad,Dune Squad,TE
+2016,12,141,Alfred Morris(Dal - RB),Milk Man,Milk Man,RB
+2016,12,142,Kamar Aiken(Ind - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,12,143,Tajae Sharpe(Ten - WR),Surace,Surace,WR
+2016,12,144,Laquon Treadwell(Min - WR),Black Mass,Black Mass,WR
+2016,13,145,Darren Sproles(Phi - RB),Black Mass,Black Mass,RB
+2016,13,146,Robert Griffin III(Cle - QB),Surace,Surace,QB
+2016,13,147,Houston(Hou - DEF),The Wolf of ...,The Wolf of Greek St,DEF
+2016,13,148,Zach Miller(Chi - TE),Milk Man,Milk Man,TE
+2016,13,149,Cameron Brate(TB - TE),Dune Squad,Dune Squad,TE
+2016,13,150,Theo Riddick(Det - RB),Poppy's Cham...,Poppy's Champions,RB
+2016,13,151,Terrance Williams(Dal - WR),GhostingTheL...,GhostingTheLombardi,WR
+2016,13,152,Crockett Gillmore(Bal - TE),The Black Sh...,The Black Shepherd,TE
+2016,13,153,Terrance West(Bal - RB),The People's...,The People's Champ,RB
+2016,13,154,Paul Perkins(NYG - RB),The Mighty A...,The Mighty Albatross,RB
+2016,13,155,Josh Doctson(Was - WR),richard,richard,WR
+2016,13,156,Vance McDonald(SF - TE),Commissioner Gordon,Commissioner Gordon,TE
+2016,14,157,Minnesota(Min - DEF),Commissioner Gordon,Commissioner Gordon,DEF
+2016,14,158,Devontae Booker(Den - RB),richard,richard,RB
+2016,14,159,Kansas City(KC - DEF),The Mighty A...,The Mighty Albatross,DEF
+2016,14,160,Markus Wheaton(Chi - WR),The People's...,The People's Champ,WR
+2016,14,161,Jacksonville(Jax - DEF),The Black Sh...,The Black Shepherd,DEF
+2016,14,162,Chandler Catanzaro(NYJ - K),GhostingTheL...,GhostingTheLombardi,K
+2016,14,163,James Starks(GB - RB),Poppy's Cham...,Poppy's Champions,RB
+2016,14,164,Roberto Aguayo(TB - K),Dune Squad,Dune Squad,K
+2016,14,165,Cincinnati(Cin - DEF),Milk Man,Milk Man,DEF
+2016,14,166,Nelson Agholor(Phi - WR),The Wolf of ...,The Wolf of Greek St,WR
+2016,14,167,Oakland(Oak - DEF),Surace,Surace,DEF
+2016,14,168,Charles Clay(Buf - TE),Black Mass,Black Mass,TE
+2016,15,169,Derek Carr(Oak - QB),Black Mass,Black Mass,QB
+2016,15,170,Steven Hauschka(Buf - K),Surace,Surace,K
+2016,15,171,Blair Walsh(Sea - K),The Wolf of ...,The Wolf of Greek St,K
+2016,15,172,Chris Johnson(Ari - RB),Milk Man,Milk Man,RB
+2016,15,173,Davante Adams(GB - WR),Dune Squad,Dune Squad,WR
+2016,15,174,Dan Bailey(Dal - K),Poppy's Cham...,Poppy's Champions,K
+2016,15,175,Philadelphia(Phi - DEF),GhostingTheL...,GhostingTheLombardi,DEF
+2016,15,176,Javorius Allen(Bal - RB),The Black Sh...,The Black Shepherd,RB
+2016,15,177,Chris Boswell(Pit - K),The People's...,The People's Champ,K
+2016,15,178,Adam Vinatieri(Ind - K),The Mighty A...,The Mighty Albatross,K
+2016,15,179,Kenneth Dixon(Bal - RB),richard,richard,RB
+2016,15,180,Mason Crosby(GB - K),Commissioner Gordon,Commissioner Gordon,K
+2015,1,1,Adrian Peterson(NO - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,1,2,Jamaal Charles(Den - RB),Milk Man,Milk Man,RB
+2015,1,3,Antonio Brown(Pit - WR),The Mighty A...,The Mighty Albatross,WR
+2015,1,4,Eddie Lacy(Sea - RB),The People's...,The People's Champ,RB
+2015,1,5,Le'Veon Bell(Pit - RB),Commissioner Gordon,Commissioner Gordon,RB
+2015,1,6,Odell Beckham Jr.(NYG - WR),richard,richard,WR
+2015,1,7,Marshawn Lynch(Oak - RB),Black Mass,Black Mass,RB
+2015,1,8,DeMarco Murray(Ten - RB),The Black Sh...,The Black Shepherd,RB
+2015,1,9,Dez Bryant(Dal - WR),GhostingTheL...,GhostingTheLombardi,WR
+2015,1,10,Julio Jones(Atl - WR),Dune Squad,Dune Squad,WR
+2015,1,11,Calvin Johnson(Det - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,1,12,Rob Gronkowski(NE - TE),Surace,Surace,TE
+2015,2,13,Matt Forte(NYJ - RB),Surace,Surace,RB
+2015,2,14,LeSean McCoy(Buf - RB),The Wolf of ...,The Wolf of Greek St,RB
+2015,2,15,Jeremy Hill(Cin - RB),Dune Squad,Dune Squad,RB
+2015,2,16,Demaryius Thomas(Den - WR),GhostingTheL...,GhostingTheLombardi,WR
+2015,2,17,Aaron Rodgers(GB - QB),The Black Sh...,The Black Shepherd,QB
+2015,2,18,Jordy Nelson(GB - WR),Black Mass,Black Mass,WR
+2015,2,19,Andrew Luck(Ind - QB),richard,richard,QB
+2015,2,20,A.J. Green(Cin - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,2,21,Randall Cobb(GB - WR),The People's...,The People's Champ,WR
+2015,2,22,Justin Forsett(Den - RB),The Mighty A...,The Mighty Albatross,RB
+2015,2,23,C.J. Anderson(Den - RB),Milk Man,Milk Man,RB
+2015,2,24,T.Y. Hilton(Ind - WR),Poppy's Cham...,Poppy's Champions,WR
+2015,3,25,Frank Gore(Ind - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,3,26,Mike Evans(TB - WR),Milk Man,Milk Man,WR
+2015,3,27,Jimmy Graham(Sea - TE),The Mighty A...,The Mighty Albatross,TE
+2015,3,28,Lamar Miller(Hou - RB),The People's...,The People's Champ,RB
+2015,3,29,Alshon Jeffery(Phi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,3,30,Brandin Cooks(NE - WR),richard,richard,WR
+2015,3,31,Latavius Murray(Min - RB),Black Mass,Black Mass,RB
+2015,3,32,Joseph Randle(Dal - RB),The Black Sh...,The Black Shepherd,RB
+2015,3,33,Mark Ingram(NO - RB),GhostingTheL...,GhostingTheLombardi,RB
+2015,3,34,Alfred Morris(Dal - RB),Dune Squad,Dune Squad,RB
+2015,3,35,Melvin Gordon(LAC - RB),The Wolf of ...,The Wolf of Greek St,RB
+2015,3,36,DeAndre Hopkins(Hou - WR),Surace,Surace,WR
+2015,4,37,Kelvin Benjamin(Car - WR),Surace,Surace,WR
+2015,4,38,Emmanuel Sanders(Den - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,4,39,T.J. Yeldon(Jax - RB),Dune Squad,Dune Squad,RB
+2015,4,40,Jordan Matthews(Phi - WR),GhostingTheL...,GhostingTheLombardi,WR
+2015,4,41,Greg Olsen(Car - TE),The Black Sh...,The Black Shepherd,TE
+2015,4,42,Golden Tate(Det - WR),Black Mass,Black Mass,WR
+2015,4,43,Carlos Hyde(SF - RB),richard,richard,RB
+2015,4,44,Andre Ellington(Ari - RB),Commissioner Gordon,Commissioner Gordon,RB
+2015,4,45,Andre Johnson(Hou - WR),The People's...,The People's Champ,WR
+2015,4,46,Jonathan Stewart(Car - RB),The Mighty A...,The Mighty Albatross,RB
+2015,4,47,Brandon Marshall(NYG - WR),Milk Man,Milk Man,WR
+2015,4,48,Keenan Allen(LAC - WR),Poppy's Cham...,Poppy's Champions,WR
+2015,5,49,Ben Roethlisberger(Pit - QB),Poppy's Cham...,Poppy's Champions,QB
+2015,5,50,Russell Wilson(Sea - QB),Milk Man,Milk Man,QB
+2015,5,51,Amari Cooper(Oak - WR),The Mighty A...,The Mighty Albatross,WR
+2015,5,52,LeGarrette Blount(Phi - RB),The People's...,The People's Champ,RB
+2015,5,53,Drew Brees(NO - QB),Commissioner Gordon,Commissioner Gordon,QB
+2015,5,54,Julian Edelman(NE - WR),richard,richard,WR
+2015,5,55,Doug Martin(TB - RB),Black Mass,Black Mass,RB
+2015,5,56,Peyton Manning(Den - QB),The Black Sh...,The Black Shepherd,QB
+2015,5,57,Todd Gurley(LAR - RB),GhostingTheL...,GhostingTheLombardi,RB
+2015,5,58,Sammy Watkins(Buf - WR),Dune Squad,Dune Squad,WR
+2015,5,59,Cam Newton(Car - QB),The Wolf of ...,The Wolf of Greek St,QB
+2015,5,60,Martavis Bryant(Pit - WR),Surace,Surace,WR
+2015,6,61,Ameer Abdullah(Det - RB),Surace,Surace,RB
+2015,6,62,Vincent Jackson(TB - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,6,63,Jarvis Landry(Mia - WR),Dune Squad,Dune Squad,WR
+2015,6,64,Tony Romo(Dal - QB),GhostingTheL...,GhostingTheLombardi,QB
+2015,6,65,DeSean Jackson(TB - WR),The Black Sh...,The Black Shepherd,WR
+2015,6,66,Martellus Bennett(GB - TE),Black Mass,Black Mass,TE
+2015,6,67,Chris Ivory(Jax - RB),richard,richard,RB
+2015,6,68,C.J. Spiller(KC - RB),Commissioner Gordon,Commissioner Gordon,RB
+2015,6,69,Ryan Tannehill(Mia - QB),The People's...,The People's Champ,QB
+2015,6,70,Eli Manning(NYG - QB),The Mighty A...,The Mighty Albatross,QB
+2015,6,71,Joique Bell(Det - RB),Milk Man,Milk Man,RB
+2015,6,72,Victor Cruz(Chi - WR),Poppy's Cham...,Poppy's Champions,WR
+2015,7,73,Travis Kelce(KC - TE),Poppy's Cham...,Poppy's Champions,TE
+2015,7,74,Jason Witten(Dal - TE),Milk Man,Milk Man,TE
+2015,7,75,Rashad Jennings(NYG - RB),The Mighty A...,The Mighty Albatross,RB
+2015,7,76,Eric Decker(NYJ - WR),The People's...,The People's Champ,WR
+2015,7,77,Allen Robinson(Jax - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,7,78,Shane Vereen(NYG - RB),richard,richard,RB
+2015,7,79,Matt Ryan(Atl - QB),Black Mass,Black Mass,QB
+2015,7,80,Jeremy Maclin(Bal - WR),The Black Sh...,The Black Shepherd,WR
+2015,7,81,Isaiah Crowell(Cle - RB),GhostingTheL...,GhostingTheLombardi,RB
+2015,7,82,Nelson Agholor(Phi - WR),Dune Squad,Dune Squad,WR
+2015,7,83,Roddy White(Atl - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,7,84,Matthew Stafford(Det - QB),Surace,Surace,QB
+2015,8,85,Arian Foster(Mia - RB),Surace,Surace,RB
+2015,8,86,Delanie Walker(Ten - TE),The Wolf of ...,The Wolf of Greek St,TE
+2015,8,87,Julius Thomas(Mia - TE),Dune Squad,Dune Squad,TE
+2015,8,88,Zach Ertz(Phi - TE),GhostingTheL...,GhostingTheLombardi,TE
+2015,8,89,Davante Adams(GB - WR),The Black Sh...,The Black Shepherd,WR
+2015,8,90,Mike Wallace(Bal - WR),Black Mass,Black Mass,WR
+2015,8,91,Giovani Bernard(Cin - RB),richard,richard,RB
+2015,8,92,Charles Johnson(Car - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,8,93,John Brown(Ari - WR),The People's...,The People's Champ,WR
+2015,8,94,Brandon LaFell(Cin - WR),The Mighty A...,The Mighty Albatross,WR
+2015,8,95,Steve Smith Sr.(Bal - WR),Milk Man,Milk Man,WR
+2015,8,96,Eddie Royal(Chi - WR),Poppy's Cham...,Poppy's Champions,WR
+2015,9,97,Seattle(Sea - DEF),Poppy's Cham...,Poppy's Champions,DEF
+2015,9,98,Alfred Blue(Hou - RB),Milk Man,Milk Man,RB
+2015,9,99,Jordan Cameron(Mia - TE),The Mighty A...,The Mighty Albatross,TE
+2015,9,100,Owen Daniels(Den - TE),The People's...,The People's Champ,TE
+2015,9,101,Kendall Wright(Chi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,9,102,Larry Fitzgerald(Ari - WR),richard,richard,WR
+2015,9,103,Kevin White(Chi - WR),Black Mass,Black Mass,WR
+2015,9,104,Ryan Mathews(Phi - RB),The Black Sh...,The Black Shepherd,RB
+2015,9,105,Duke Johnson Jr.(Cle - RB),GhostingTheL...,GhostingTheLombardi,RB
+2015,9,106,Tom Brady(NE - QB),Dune Squad,Dune Squad,QB
+2015,9,107,Bishop Sankey(Min - RB),The Wolf of ...,The Wolf of Greek St,RB
+2015,9,108,Pierre Garcon(SF - WR),Surace,Surace,WR
+2015,10,109,Tevin Coleman(Atl - RB),Surace,Surace,RB
+2015,10,110,Brian Quick(Was - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,10,111,Jonas Gray(Jax - RB),Dune Squad,Dune Squad,RB
+2015,10,112,Buffalo(Buf - DEF),GhostingTheL...,GhostingTheLombardi,DEF
+2015,10,113,Tre Mason(LAR - RB),The Black Sh...,The Black Shepherd,RB
+2015,10,114,Houston(Hou - DEF),Black Mass,Black Mass,DEF
+2015,10,115,Dwayne Allen(NE - TE),richard,richard,TE
+2015,10,116,Tyler Eifert(Cin - TE),Commissioner Gordon,Commissioner Gordon,TE
+2015,10,117,Marvin Jones Jr.(Det - WR),The People's...,The People's Champ,WR
+2015,10,118,Devonta Freeman(Atl - RB),The Mighty A...,The Mighty Albatross,RB
+2015,10,119,Los Angeles(LAR - DEF),Milk Man,Milk Man,DEF
+2015,10,120,Kyle Rudolph(Min - TE),Poppy's Cham...,Poppy's Champions,TE
+2015,11,121,Danny Woodhead(Bal - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,11,122,Doug Baldwin(Sea - WR),Milk Man,Milk Man,WR
+2015,11,123,Philip Rivers(LAC - QB),The Mighty A...,The Mighty Albatross,QB
+2015,11,124,Stephen Gostkowski(NE - K),The People's...,The People's Champ,K
+2015,11,125,Marques Colston(NO - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,11,126,Reggie Bush(Buf - RB),richard,richard,RB
+2015,11,127,Andre Williams(LAC - RB),Black Mass,Black Mass,RB
+2015,11,128,Donte Moncrief(Ind - WR),The Black Sh...,The Black Shepherd,WR
+2015,11,129,Torrey Smith(Phi - WR),GhostingTheL...,GhostingTheLombardi,WR
+2015,11,130,Joe Flacco(Bal - QB),Dune Squad,Dune Squad,QB
+2015,11,131,Anquan Boldin(Det - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,11,132,Michael Crabtree(Oak - WR),Surace,Surace,WR
+2015,12,133,Robert Griffin III(Cle - QB),Surace,Surace,QB
+2015,12,134,Arizona(Ari - DEF),The Wolf of ...,The Wolf of Greek St,DEF
+2015,12,135,Ladarius Green(Pit - TE),Dune Squad,Dune Squad,TE
+2015,12,136,Josh Hill(NO - TE),GhostingTheL...,GhostingTheLombardi,TE
+2015,12,137,Baltimore(Bal - DEF),The Black Sh...,The Black Shepherd,DEF
+2015,12,138,Benjamin Watson(Bal - TE),Black Mass,Black Mass,TE
+2015,12,139,Austin Seferian-Jenkins(NYJ - TE),richard,richard,TE
+2015,12,140,David Cobb(Chi - RB),Commissioner Gordon,Commissioner Gordon,RB
+2015,12,141,DeVante Parker(Mia - WR),The People's...,The People's Champ,WR
+2015,12,142,Stevie Johnson(LAC - WR),The Mighty A...,The Mighty Albatross,WR
+2015,12,143,Knile Davis(Pit - RB),Milk Man,Milk Man,RB
+2015,12,144,DeAngelo Williams(Pit - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,13,145,Ahmad Bradshaw(Ind - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,13,146,Adam Vinatieri(Ind - K),Milk Man,Milk Man,K
+2015,13,147,Miami(Mia - DEF),The Mighty A...,The Mighty Albatross,DEF
+2015,13,148,Darren Sproles(Phi - RB),The People's...,The People's Champ,RB
+2015,13,149,Michael Floyd(Min - WR),Commissioner Gordon,Commissioner Gordon,WR
+2015,13,150,Rueben Randle(Chi - WR),richard,richard,WR
+2015,13,151,Steven Hauschka(Buf - K),Black Mass,Black Mass,K
+2015,13,152,New York(NYJ - DEF),The Black Sh...,The Black Shepherd,DEF
+2015,13,153,Khiry Robinson(NYJ - RB),GhostingTheL...,GhostingTheLombardi,RB
+2015,13,154,Kenny Stills(Mia - WR),Dune Squad,Dune Squad,WR
+2015,13,155,Percy Harvin(Buf - WR),The Wolf of ...,The Wolf of Greek St,WR
+2015,13,156,Darren McFadden(Dal - RB),Surace,Surace,RB
+2015,14,157,Kansas City(KC - DEF),Surace,Surace,DEF
+2015,14,158,Fred Jackson(Sea - RB),The Wolf of ...,The Wolf of Greek St,RB
+2015,14,159,New England(NE - DEF),Dune Squad,Dune Squad,DEF
+2015,14,160,Cody Latimer(Den - WR),GhostingTheL...,GhostingTheLombardi,WR
+2015,14,161,Terrance Williams(Dal - WR),The Black Sh...,The Black Shepherd,WR
+2015,14,162,Breshad Perriman(Bal - WR),Black Mass,Black Mass,WR
+2015,14,163,Antonio Gates(LAC - TE),richard,richard,TE
+2015,14,164,Carolina(Car - DEF),Commissioner Gordon,Commissioner Gordon,DEF
+2015,14,165,Denver(Den - DEF),The People's...,The People's Champ,DEF
+2015,14,166,Dan Bailey(Dal - K),The Mighty A...,The Mighty Albatross,K
+2015,14,167,Charles Sims(TB - RB),Milk Man,Milk Man,RB
+2015,14,168,Montee Ball(NE - RB),Poppy's Cham...,Poppy's Champions,RB
+2015,15,169,Mason Crosby(GB - K),Poppy's Cham...,Poppy's Champions,K
+2015,15,170,Vernon Davis(Was - TE),Milk Man,Milk Man,TE
+2015,15,171,David Johnson(Ari - RB),The Mighty A...,The Mighty Albatross,RB
+2015,15,172,Teddy Bridgewater(Min - QB),The People's...,The People's Champ,QB
+2015,15,173,Connor Barth(Chi - K),Commissioner Gordon,Commissioner Gordon,K
+2015,15,174,Justin Tucker(Bal - K),richard,richard,K
+2015,15,175,Jay Cutler(Chi - QB),Black Mass,Black Mass,QB
+2015,15,176,Greg Jennings(Mia - WR),The Black Sh...,The Black Shepherd,WR
+2015,15,177,Matt Bryant(Atl - K),GhostingTheL...,GhostingTheLombardi,K
+2015,15,178,Cody Parkey(Cle - K),Dune Squad,Dune Squad,K
+2015,15,179,Blair Walsh(Sea - K),The Wolf of ...,The Wolf of Greek St,K
+2015,15,180,Dan Carpenter(Buf - K),Surace,Surace,K
+2014,1,1,LeSean McCoy(Buf - RB),Dune Squad,Dune Squad,RB
+2014,1,2,Jamaal Charles(Den - RB),Commissioner Gordon,Commissioner Gordon,RB
+2014,1,3,Adrian Peterson(NO - RB),Persian Immo...,The People's Champ,RB
+2014,1,4,Matt Forte(NYJ - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,1,5,Calvin Johnson(Det - WR),The Mighty A...,The Mighty Albatross,WR
+2014,1,6,Eddie Lacy(Sea - RB),The Black Sh...,The Black Shepherd,RB
+2014,1,7,Demaryius Thomas(Den - WR),HEAD,Black Mass,WR
+2014,1,8,Marshawn Lynch(Oak - RB),GhostingTheL...,GhostingTheLombardi,RB
+2014,1,9,Jimmy Graham(Sea - TE),richard,richard,TE
+2014,1,10,Dez Bryant(Dal - WR),Surace,Surace,WR
+2014,1,11,Brandon Marshall(NYG - WR),Milk Man,Milk Man,WR
+2014,1,12,A.J. Green(Cin - WR),The Wolf of ...,The Wolf of Greek St,WR
+2014,2,13,Julio Jones(Atl - WR),The Wolf of ...,The Wolf of Greek St,WR
+2014,2,14,Peyton Manning(Den - QB),Milk Man,Milk Man,QB
+2014,2,15,Alshon Jeffery(Phi - WR),Surace,Surace,WR
+2014,2,16,DeMarco Murray(Ten - RB),richard,richard,RB
+2014,2,17,Montee Ball(NE - RB),GhostingTheL...,GhostingTheLombardi,RB
+2014,2,18,Arian Foster(Mia - RB),HEAD,Black Mass,RB
+2014,2,19,Julius Thomas(Mia - TE),The Black Sh...,The Black Shepherd,TE
+2014,2,20,Rob Gronkowski(NE - TE),The Mighty A...,The Mighty Albatross,TE
+2014,2,21,Giovani Bernard(Cin - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,2,22,Jordy Nelson(GB - WR),Persian Immo...,The People's Champ,WR
+2014,2,23,Drew Brees(NO - QB),Commissioner Gordon,Commissioner Gordon,QB
+2014,2,24,Doug Martin(TB - RB),Dune Squad,Dune Squad,RB
+2014,3,25,Andre Ellington(Ari - RB),Dune Squad,Dune Squad,RB
+2014,3,26,Antonio Brown(Pit - WR),Commissioner Gordon,Commissioner Gordon,WR
+2014,3,27,Reggie Bush(Buf - RB),Persian Immo...,The People's Champ,RB
+2014,3,28,Aaron Rodgers(GB - QB),Poppy's Cham...,Poppy's Champions,QB
+2014,3,29,Zac Stacy(NYJ - RB),The Mighty A...,The Mighty Albatross,RB
+2014,3,30,Randall Cobb(GB - WR),The Black Sh...,The Black Shepherd,WR
+2014,3,31,Victor Cruz(Chi - WR),HEAD,Black Mass,WR
+2014,3,32,Le'Veon Bell(Pit - RB),GhostingTheL...,GhostingTheLombardi,RB
+2014,3,33,Keenan Allen(LAC - WR),richard,richard,WR
+2014,3,34,Alfred Morris(Dal - RB),Surace,Surace,RB
+2014,3,35,C.J. Spiller(KC - RB),Milk Man,Milk Man,RB
+2014,3,36,Vernon Davis(Was - TE),The Wolf of ...,The Wolf of Greek St,TE
+2014,4,37,Ryan Mathews(Phi - RB),The Wolf of ...,The Wolf of Greek St,RB
+2014,4,38,Vincent Jackson(TB - WR),Milk Man,Milk Man,WR
+2014,4,39,Bishop Sankey(Min - RB),Surace,Surace,RB
+2014,4,40,Rashad Jennings(NYG - RB),richard,richard,RB
+2014,4,41,Andrew Luck(Ind - QB),GhostingTheL...,GhostingTheLombardi,QB
+2014,4,42,Frank Gore(Ind - RB),HEAD,Black Mass,RB
+2014,4,43,Percy Harvin(Buf - WR),The Black Sh...,The Black Shepherd,WR
+2014,4,44,Andre Johnson(Hou - WR),The Mighty A...,The Mighty Albatross,WR
+2014,4,45,Pierre Garcon(SF - WR),Poppy's Cham...,Poppy's Champions,WR
+2014,4,46,Roddy White(Atl - WR),Persian Immo...,The People's Champ,WR
+2014,4,47,Michael Crabtree(Oak - WR),Commissioner Gordon,Commissioner Gordon,WR
+2014,4,48,T.Y. Hilton(Ind - WR),Dune Squad,Dune Squad,WR
+2014,5,49,Cam Newton(Car - QB),Dune Squad,Dune Squad,QB
+2014,5,50,Toby Gerhart(Jax - RB),Commissioner Gordon,Commissioner Gordon,RB
+2014,5,51,Jordan Cameron(Mia - TE),Persian Immo...,The People's Champ,TE
+2014,5,52,Jeremy Maclin(Bal - WR),Poppy's Cham...,Poppy's Champions,WR
+2014,5,53,Larry Fitzgerald(Ari - WR),The Mighty A...,The Mighty Albatross,WR
+2014,5,54,Matthew Stafford(Det - QB),The Black Sh...,The Black Shepherd,QB
+2014,5,55,Shane Vereen(NYG - RB),HEAD,Black Mass,RB
+2014,5,56,Michael Floyd(Min - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,5,57,DeSean Jackson(TB - WR),richard,richard,WR
+2014,5,58,Matt Ryan(Atl - QB),Surace,Surace,QB
+2014,5,59,Joique Bell(Det - RB),Milk Man,Milk Man,RB
+2014,5,60,Tony Romo(Dal - QB),The Wolf of ...,The Wolf of Greek St,QB
+2014,6,61,Ben Tate(Pit - RB),The Wolf of ...,The Wolf of Greek St,RB
+2014,6,62,Torrey Smith(Phi - WR),Milk Man,Milk Man,WR
+2014,6,63,Jason Witten(Dal - TE),Surace,Surace,TE
+2014,6,64,Tom Brady(NE - QB),richard,richard,QB
+2014,6,65,Terrance Williams(Dal - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,6,66,Marques Colston(NO - WR),HEAD,Black Mass,WR
+2014,6,67,Julian Edelman(NE - WR),The Black Sh...,The Black Shepherd,WR
+2014,6,68,Chris Johnson(Ari - RB),The Mighty A...,The Mighty Albatross,RB
+2014,6,69,Jordan Reed(Was - TE),Poppy's Cham...,Poppy's Champions,TE
+2014,6,70,Cordarrelle Patterson(Oak - WR),Persian Immo...,The People's Champ,WR
+2014,6,71,Mike Wallace(Bal - WR),Commissioner Gordon,Commissioner Gordon,WR
+2014,6,72,Ray Rice(Bal - RB),Dune Squad,Dune Squad,RB
+2014,7,73,Kelvin Benjamin(Car - WR),Dune Squad,Dune Squad,WR
+2014,7,74,Kendall Wright(Chi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2014,7,75,Colin Kaepernick(SF - QB),Persian Immo...,The People's Champ,QB
+2014,7,76,Emmanuel Sanders(Den - WR),Poppy's Cham...,Poppy's Champions,WR
+2014,7,77,Nick Foles(Phi - QB),The Mighty A...,The Mighty Albatross,QB
+2014,7,78,Stevan Ridley(Atl - RB),The Black Sh...,The Black Shepherd,RB
+2014,7,79,Robert Griffin III(Cle - QB),HEAD,Black Mass,QB
+2014,7,80,Greg Olsen(Car - TE),GhostingTheL...,GhostingTheLombardi,TE
+2014,7,81,Brandin Cooks(NE - WR),richard,richard,WR
+2014,7,82,Maurice Jones-Drew(Jax - RB),Surace,Surace,RB
+2014,7,83,Wes Welker(LAR - WR),Milk Man,Milk Man,WR
+2014,7,84,Trent Richardson(Bal - RB),The Wolf of ...,The Wolf of Greek St,RB
+2014,8,85,Seattle(Sea - DEF),The Wolf of ...,The Wolf of Greek St,DEF
+2014,8,86,Kyle Rudolph(Min - TE),Milk Man,Milk Man,TE
+2014,8,87,Sammy Watkins(Buf - WR),Surace,Surace,WR
+2014,8,88,Terrance West(Bal - RB),richard,richard,RB
+2014,8,89,Golden Tate(Det - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,8,90,Carolina(Car - DEF),HEAD,Black Mass,DEF
+2014,8,91,Lamar Miller(Hou - RB),The Black Sh...,The Black Shepherd,RB
+2014,8,92,Steven Jackson(NE - RB),The Mighty A...,The Mighty Albatross,RB
+2014,8,93,Fred Jackson(Sea - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,8,94,San Francisco(SF - DEF),Persian Immo...,The People's Champ,DEF
+2014,8,95,Dennis Pitta(Bal - TE),Commissioner Gordon,Commissioner Gordon,TE
+2014,8,96,Mike Evans(TB - WR),Dune Squad,Dune Squad,WR
+2014,9,97,Zach Ertz(Phi - TE),Dune Squad,Dune Squad,TE
+2014,9,98,Russell Wilson(Sea - QB),Commissioner Gordon,Commissioner Gordon,QB
+2014,9,99,Danny Woodhead(Bal - RB),Persian Immo...,The People's Champ,RB
+2014,9,100,Danny Amendola(NE - WR),Poppy's Cham...,Poppy's Champions,WR
+2014,9,101,Cecil Shorts III(TB - WR),The Mighty A...,The Mighty Albatross,WR
+2014,9,102,LeGarrette Blount(Phi - RB),The Black Sh...,The Black Shepherd,RB
+2014,9,103,Carlos Hyde(SF - RB),HEAD,Black Mass,RB
+2014,9,104,Pierre Thomas(Was - RB),GhostingTheL...,GhostingTheLombardi,RB
+2014,9,105,Rueben Randle(Chi - WR),richard,richard,WR
+2014,9,106,DeAndre Hopkins(Hou - WR),Surace,Surace,WR
+2014,9,107,Reggie Wayne(NE - WR),Milk Man,Milk Man,WR
+2014,9,108,Eric Decker(NYJ - WR),The Wolf of ...,The Wolf of Greek St,WR
+2014,10,109,Anquan Boldin(Det - WR),The Wolf of ...,The Wolf of Greek St,WR
+2014,10,110,Bernard Pierce(Den - RB),Milk Man,Milk Man,RB
+2014,10,111,Andre Williams(LAC - RB),Surace,Surace,RB
+2014,10,112,Justin Hunter(Pit - WR),richard,richard,WR
+2014,10,113,Josh Gordon(Cle - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,10,114,Charles Clay(Buf - TE),HEAD,Black Mass,TE
+2014,10,115,James Jones(LAC - WR),The Black Sh...,The Black Shepherd,WR
+2014,10,116,Martellus Bennett(GB - TE),The Mighty A...,The Mighty Albatross,TE
+2014,10,117,DeAngelo Williams(Pit - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,10,118,Markus Wheaton(Chi - WR),Persian Immo...,The People's Champ,WR
+2014,10,119,Knowshon Moreno(Mia - RB),Commissioner Gordon,Commissioner Gordon,RB
+2014,10,120,Hakeem Nicks(NO - WR),Dune Squad,Dune Squad,WR
+2014,11,121,Devonta Freeman(Atl - RB),Dune Squad,Dune Squad,RB
+2014,11,122,Heath Miller(Pit - TE),Commissioner Gordon,Commissioner Gordon,TE
+2014,11,123,Darren Sproles(Phi - RB),Persian Immo...,The People's Champ,RB
+2014,11,124,Knile Davis(Pit - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,11,125,Philip Rivers(LAC - QB),The Mighty A...,The Mighty Albatross,QB
+2014,11,126,Eric Ebron(Det - TE),The Black Sh...,The Black Shepherd,TE
+2014,11,127,Stephen Gostkowski(NE - K),HEAD,Black Mass,K
+2014,11,128,Riley Cooper(Phi - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,11,129,Chris Ivory(Jax - RB),richard,richard,RB
+2014,11,130,Los Angeles(LAR - DEF),Surace,Surace,DEF
+2014,11,131,Christine Michael(Ind - RB),Milk Man,Milk Man,RB
+2014,11,132,Jonathan Stewart(Car - RB),The Wolf of ...,The Wolf of Greek St,RB
+2014,12,133,Jonathan Grimes(Hou - RB),The Wolf of ...,The Wolf of Greek St,RB
+2014,12,134,Ladarius Green(Pit - TE),Milk Man,Milk Man,TE
+2014,12,135,Matt Prater(Det - K),Surace,Surace,K
+2014,12,136,Jay Cutler(Chi - QB),richard,richard,QB
+2014,12,137,Mark Ingram(NO - RB),GhostingTheL...,GhostingTheLombardi,RB
+2014,12,138,Dwayne Bowe(Cle - WR),HEAD,Black Mass,WR
+2014,12,139,Denver(Den - DEF),The Black Sh...,The Black Shepherd,DEF
+2014,12,140,New England(NE - DEF),The Mighty A...,The Mighty Albatross,DEF
+2014,12,141,Chicago(Chi - DEF),Poppy's Cham...,Poppy's Champions,DEF
+2014,12,142,Mason Crosby(GB - K),Persian Immo...,The People's Champ,K
+2014,12,143,Jeremy Hill(Cin - RB),Commissioner Gordon,Commissioner Gordon,RB
+2014,12,144,Ben Roethlisberger(Pit - QB),Dune Squad,Dune Squad,QB
+2014,13,145,Coby Fleener(NO - TE),Dune Squad,Dune Squad,TE
+2014,13,146,Ahmad Bradshaw(Ind - RB),Commissioner Gordon,Commissioner Gordon,RB
+2014,13,147,James White(NE - RB),Persian Immo...,The People's Champ,RB
+2014,13,148,Ronnie Hillman(LAC - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,13,149,Justin Tucker(Bal - K),The Mighty A...,The Mighty Albatross,K
+2014,13,150,Darren McFadden(Dal - RB),The Black Sh...,The Black Shepherd,RB
+2014,13,151,Garrett Graham(Den - TE),HEAD,Black Mass,TE
+2014,13,152,Brian Hartline(Cle - WR),GhostingTheL...,GhostingTheLombardi,WR
+2014,13,153,Delanie Walker(Ten - TE),richard,richard,TE
+2014,13,154,Tavon Austin(LAR - WR),Surace,Surace,WR
+2014,13,155,Adam Vinatieri(Ind - K),Milk Man,Milk Man,K
+2014,13,156,Dan Bailey(Dal - K),The Wolf of ...,The Wolf of Greek St,K
+2014,14,157,Doug Baldwin(Sea - WR),The Wolf of ...,The Wolf of Greek St,WR
+2014,14,158,Kansas City(KC - DEF),Milk Man,Milk Man,DEF
+2014,14,159,Andy Dalton(Cin - QB),Surace,Surace,QB
+2014,14,160,Arizona(Ari - DEF),richard,richard,DEF
+2014,14,161,Philadelphia(Phi - DEF),GhostingTheL...,GhostingTheLombardi,DEF
+2014,14,162,Ryan Tannehill(Mia - QB),HEAD,Black Mass,QB
+2014,14,163,Robbie Gould(SF - K),The Black Sh...,The Black Shepherd,K
+2014,14,164,Jarrett Boykin(Buf - WR),The Mighty A...,The Mighty Albatross,WR
+2014,14,165,Roy Helu Jr.(Oak - RB),Poppy's Cham...,Poppy's Champions,RB
+2014,14,166,Steve Smith Sr.(Bal - WR),Persian Immo...,The People's Champ,WR
+2014,14,167,Steven Hauschka(Buf - K),Commissioner Gordon,Commissioner Gordon,K
+2014,14,168,Johnny Manziel(Cle - QB),Dune Squad,Dune Squad,QB
+2014,15,169,Jordan Matthews(Phi - WR),Dune Squad,Dune Squad,WR
+2014,15,170,Pittsburgh(Pit - DEF),Commissioner Gordon,Commissioner Gordon,DEF
+2014,15,171,Jacquizz Rodgers(TB - RB),Persian Immo...,The People's Champ,RB
+2014,15,172,Phil Dawson(Ari - K),Poppy's Cham...,Poppy's Champions,K
+2014,15,173,Lance Dunbar(LAR - RB),The Mighty A...,The Mighty Albatross,RB
+2014,15,174,Harry Douglas(Ten - WR),The Black Sh...,The Black Shepherd,WR
+2014,15,175,Cincinnati(Cin - DEF),HEAD,Black Mass,DEF
+2014,15,176,Matt Bryant(Atl - K),GhostingTheL...,GhostingTheLombardi,K
+2014,15,177,Nick Novak(Hou - K),richard,richard,K
+2014,15,178,Khiry Robinson(NYJ - RB),Surace,Surace,RB
+2014,15,179,Kenbrell Thompkins(NYJ - WR),Milk Man,Milk Man,WR
+2014,15,180,Miles Austin(Phi - WR),The Wolf of ...,The Wolf of Greek St,WR
+2013,1,1,Adrian Peterson(NO - RB),richard,richard,RB
+2013,1,2,Doug Martin(TB - RB),Dune Squad,Dune Squad,RB
+2013,1,3,C.J. Spiller(KC - RB),HEAD,Black Mass,RB
+2013,1,4,Arian Foster(Mia - RB),GhostingTheL...,GhostingTheLombardi,RB
+2013,1,5,LeSean McCoy(Buf - RB),Milk Man,Milk Man,RB
+2013,1,6,Jamaal Charles(Den - RB),poppy's aven...,Poppy's Champions,RB
+2013,1,7,Calvin Johnson(Det - WR),Surace,Surace,WR
+2013,1,8,Marshawn Lynch(Oak - RB),The People's...,The People's Champ,RB
+2013,1,9,Trent Richardson(Bal - RB),The Mighty A...,The Mighty Albatross,RB
+2013,1,10,Ray Rice(Bal - RB),The Black Sh...,The Black Shepherd,RB
+2013,1,11,Alfred Morris(Dal - RB),Starvin' Marvin,The Wolf of Greek St,RB
+2013,1,12,Matt Forte(NYJ - RB),Commissioner Gordon,Commissioner Gordon,RB
+2013,2,13,Steven Jackson(NE - RB),Commissioner Gordon,Commissioner Gordon,RB
+2013,2,14,Dez Bryant(Dal - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,2,15,Maurice Jones-Drew(Jax - RB),The Black Sh...,The Black Shepherd,RB
+2013,2,16,A.J. Green(Cin - WR),The Mighty A...,The Mighty Albatross,WR
+2013,2,17,Stevan Ridley(Atl - RB),The People's...,The People's Champ,RB
+2013,2,18,Chris Johnson(Ari - RB),Surace,Surace,RB
+2013,2,19,Brandon Marshall(NYG - WR),poppy's aven...,Poppy's Champions,WR
+2013,2,20,Aaron Rodgers(GB - QB),Milk Man,Milk Man,QB
+2013,2,21,Reggie Bush(Buf - RB),GhostingTheL...,GhostingTheLombardi,RB
+2013,2,22,Julio Jones(Atl - WR),HEAD,Black Mass,WR
+2013,2,23,Demaryius Thomas(Den - WR),Dune Squad,Dune Squad,WR
+2013,2,24,Jimmy Graham(Sea - TE),richard,richard,TE
+2013,3,25,Drew Brees(NO - QB),richard,richard,QB
+2013,3,26,Victor Cruz(Chi - WR),Dune Squad,Dune Squad,WR
+2013,3,27,Frank Gore(Ind - RB),HEAD,Black Mass,RB
+2013,3,28,Roddy White(Atl - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,3,29,Randall Cobb(GB - WR),Milk Man,Milk Man,WR
+2013,3,30,Andre Johnson(Hou - WR),poppy's aven...,Poppy's Champions,WR
+2013,3,31,Larry Fitzgerald(Ari - WR),Surace,Surace,WR
+2013,3,32,Vincent Jackson(TB - WR),The People's...,The People's Champ,WR
+2013,3,33,Peyton Manning(Den - QB),The Mighty A...,The Mighty Albatross,QB
+2013,3,34,Reggie Wayne(NE - WR),The Black Sh...,The Black Shepherd,WR
+2013,3,35,David Wilson(NYG - RB),Starvin' Marvin,The Wolf of Greek St,RB
+2013,3,36,Cam Newton(Car - QB),Commissioner Gordon,Commissioner Gordon,QB
+2013,4,37,DeMarco Murray(Ten - RB),Commissioner Gordon,Commissioner Gordon,RB
+2013,4,38,Jason Witten(Dal - TE),Starvin' Marvin,The Wolf of Greek St,TE
+2013,4,39,Matt Ryan(Atl - QB),The Black Sh...,The Black Shepherd,QB
+2013,4,40,Hakeem Nicks(NO - WR),The Mighty A...,The Mighty Albatross,WR
+2013,4,41,Colin Kaepernick(SF - QB),The People's...,The People's Champ,QB
+2013,4,42,Danny Amendola(NE - WR),Surace,Surace,WR
+2013,4,43,Tom Brady(NE - QB),poppy's aven...,Poppy's Champions,QB
+2013,4,44,Marques Colston(NO - WR),Milk Man,Milk Man,WR
+2013,4,45,Dwayne Bowe(Cle - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,4,46,Jordy Nelson(GB - WR),HEAD,Black Mass,WR
+2013,4,47,Eddie Lacy(Sea - RB),Dune Squad,Dune Squad,RB
+2013,4,48,Pierre Garcon(SF - WR),richard,richard,WR
+2013,5,49,Torrey Smith(Phi - WR),richard,richard,WR
+2013,5,50,Robert Griffin III(Cle - QB),Dune Squad,Dune Squad,QB
+2013,5,51,Matthew Stafford(Det - QB),HEAD,Black Mass,QB
+2013,5,52,Wes Welker(LAR - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,5,53,Darren McFadden(Dal - RB),Milk Man,Milk Man,RB
+2013,5,54,Ryan Mathews(Phi - RB),poppy's aven...,Poppy's Champions,RB
+2013,5,55,Giovani Bernard(Cin - RB),Surace,Surace,RB
+2013,5,56,Mike Wallace(Bal - WR),The People's...,The People's Champ,WR
+2013,5,57,Rob Gronkowski(NE - TE),The Mighty A...,The Mighty Albatross,TE
+2013,5,58,Vernon Davis(Was - TE),The Black Sh...,The Black Shepherd,TE
+2013,5,59,Tony Romo(Dal - QB),Starvin' Marvin,The Wolf of Greek St,QB
+2013,5,60,Eric Decker(NYJ - WR),Commissioner Gordon,Commissioner Gordon,WR
+2013,6,61,Antonio Brown(Pit - WR),Commissioner Gordon,Commissioner Gordon,WR
+2013,6,62,Steve Smith Sr.(Bal - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,6,63,Jermichael Finley(GB - TE),The Black Sh...,The Black Shepherd,TE
+2013,6,64,Darren Sproles(Phi - RB),The Mighty A...,The Mighty Albatross,RB
+2013,6,65,Tony Gonzalez(Atl - TE),The People's...,The People's Champ,TE
+2013,6,66,Lamar Miller(Hou - RB),Surace,Surace,RB
+2013,6,67,Daryl Richardson(Jax - RB),poppy's aven...,Poppy's Champions,RB
+2013,6,68,Tavon Austin(LAR - WR),Milk Man,Milk Man,WR
+2013,6,69,Cecil Shorts III(TB - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,6,70,James Jones(LAC - WR),HEAD,Black Mass,WR
+2013,6,71,T.Y. Hilton(Ind - WR),Dune Squad,Dune Squad,WR
+2013,6,72,DeSean Jackson(TB - WR),richard,richard,WR
+2013,7,73,DeAngelo Williams(Pit - RB),richard,richard,RB
+2013,7,74,Montee Ball(NE - RB),Dune Squad,Dune Squad,RB
+2013,7,75,Rashard Mendenhall(Ari - RB),HEAD,Black Mass,RB
+2013,7,76,Russell Wilson(Sea - QB),GhostingTheL...,GhostingTheLombardi,QB
+2013,7,77,Brandon Myers(TB - TE),Milk Man,Milk Man,TE
+2013,7,78,Miles Austin(Phi - WR),poppy's aven...,Poppy's Champions,WR
+2013,7,79,Andrew Luck(Ind - QB),Surace,Surace,QB
+2013,7,80,Stevie Johnson(LAC - WR),The People's...,The People's Champ,WR
+2013,7,81,Shane Vereen(NYG - RB),The Mighty A...,The Mighty Albatross,RB
+2013,7,82,Ahmad Bradshaw(Ind - RB),The Black Sh...,The Black Shepherd,RB
+2013,7,83,Mike Williams(KC - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,7,84,Greg Olsen(Car - TE),Commissioner Gordon,Commissioner Gordon,TE
+2013,8,85,Chris Ivory(Jax - RB),Commissioner Gordon,Commissioner Gordon,RB
+2013,8,86,Andre Brown(Hou - RB),Starvin' Marvin,The Wolf of Greek St,RB
+2013,8,87,Greg Jennings(Mia - WR),The Black Sh...,The Black Shepherd,WR
+2013,8,88,Vincent Brown(NO - WR),The Mighty A...,The Mighty Albatross,WR
+2013,8,89,Seattle(Sea - DEF),The People's...,The People's Champ,DEF
+2013,8,90,Fred Davis(NE - TE),Surace,Surace,TE
+2013,8,91,Ben Tate(Pit - RB),poppy's aven...,Poppy's Champions,RB
+2013,8,92,Anquan Boldin(Det - WR),Milk Man,Milk Man,WR
+2013,8,93,Kenbrell Thompkins(NYJ - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,8,94,Chicago(Chi - DEF),HEAD,Black Mass,DEF
+2013,8,95,Eli Manning(NYG - QB),Dune Squad,Dune Squad,QB
+2013,8,96,San Francisco(SF - DEF),richard,richard,DEF
+2013,9,97,Matt Bryant(Atl - K),richard,richard,K
+2013,9,98,Bernard Pierce(Den - RB),Dune Squad,Dune Squad,RB
+2013,9,99,Kyle Rudolph(Min - TE),HEAD,Black Mass,TE
+2013,9,100,Josh Gordon(Cle - WR),GhostingTheL...,GhostingTheLombardi,WR
+2013,9,101,Emmanuel Sanders(Den - WR),Milk Man,Milk Man,WR
+2013,9,102,Owen Daniels(Den - TE),poppy's aven...,Poppy's Champions,TE
+2013,9,103,Chris Givens(Phi - WR),Surace,Surace,WR
+2013,9,104,Danny Woodhead(Bal - RB),The People's...,The People's Champ,RB
+2013,9,105,Houston(Hou - DEF),The Mighty A...,The Mighty Albatross,DEF
+2013,9,106,Le'Veon Bell(Pit - RB),The Black Sh...,The Black Shepherd,RB
+2013,9,107,Denver(Den - DEF),Starvin' Marvin,The Wolf of Greek St,DEF
+2013,9,108,Lance Moore(NO - WR),Commissioner Gordon,Commissioner Gordon,WR
+2013,10,109,Golden Tate(Det - WR),Commissioner Gordon,Commissioner Gordon,WR
+2013,10,110,Sidney Rice(Sea - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,10,111,Michael Floyd(Min - WR),The Black Sh...,The Black Shepherd,WR
+2013,10,112,Phil Dawson(Ari - K),The Mighty A...,The Mighty Albatross,K
+2013,10,113,Markus Wheaton(Chi - WR),The People's...,The People's Champ,WR
+2013,10,114,Justin Blackmon(Jax - WR),Surace,Surace,WR
+2013,10,115,Fred Jackson(Sea - RB),poppy's aven...,Poppy's Champions,RB
+2013,10,116,BenJarvus Green-Ellis(Cin - RB),Milk Man,Milk Man,RB
+2013,10,117,Mark Ingram(NO - RB),GhostingTheL...,GhostingTheLombardi,RB
+2013,10,118,Kenny Britt(Cle - WR),HEAD,Black Mass,WR
+2013,10,119,DeAndre Hopkins(Hou - WR),Dune Squad,Dune Squad,WR
+2013,10,120,Mike Vick(Pit - QB),richard,richard,QB
+2013,11,121,Ronnie Hillman(LAC - RB),richard,richard,RB
+2013,11,122,Bryce Brown(Sea - RB),Dune Squad,Dune Squad,RB
+2013,11,123,Antonio Gates(LAC - TE),HEAD,Black Mass,TE
+2013,11,124,Knowshon Moreno(Mia - RB),GhostingTheL...,GhostingTheLombardi,RB
+2013,11,125,Marcel Reece(Sea - RB),Milk Man,Milk Man,RB
+2013,11,126,Jared Cook(Oak - TE),poppy's aven...,Poppy's Champions,TE
+2013,11,127,Tyler Eifert(Cin - TE),Surace,Surace,TE
+2013,11,128,DuJuan Harris(SF - RB),The People's...,The People's Champ,RB
+2013,11,129,Jonathan Dwyer(Ari - RB),The Mighty A...,The Mighty Albatross,RB
+2013,11,130,Pierre Thomas(Was - RB),The Black Sh...,The Black Shepherd,RB
+2013,11,131,Blair Walsh(Sea - K),Starvin' Marvin,The Wolf of Greek St,K
+2013,11,132,Jordan Cameron(Mia - TE),Commissioner Gordon,Commissioner Gordon,TE
+2013,12,133,Rueben Randle(Chi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2013,12,134,Brian Hartline(Cle - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,12,135,Malcom Floyd(LAC - WR),The Black Sh...,The Black Shepherd,WR
+2013,12,136,Ryan Broyles(Det - WR),The Mighty A...,The Mighty Albatross,WR
+2013,12,137,Stephen Gostkowski(NE - K),The People's...,The People's Champ,K
+2013,12,138,Cincinnati(Cin - DEF),Surace,Surace,DEF
+2013,12,139,Michael Bush(Ari - RB),poppy's aven...,Poppy's Champions,RB
+2013,12,140,Santonio Holmes(Chi - WR),Milk Man,Milk Man,WR
+2013,12,141,Zach Sudfeld(NYJ - TE),GhostingTheL...,GhostingTheLombardi,TE
+2013,12,142,Carson Palmer(Ari - QB),HEAD,Black Mass,QB
+2013,12,143,Vick Ballard(NO - RB),Dune Squad,Dune Squad,RB
+2013,12,144,Isaac Redman(Pit - RB),richard,richard,RB
+2013,13,145,Martellus Bennett(GB - TE),richard,richard,TE
+2013,13,146,Cordarrelle Patterson(Oak - WR),Dune Squad,Dune Squad,WR
+2013,13,147,Justin Tucker(Bal - K),HEAD,Black Mass,K
+2013,13,148,New England(NE - DEF),GhostingTheL...,GhostingTheLombardi,DEF
+2013,13,149,Jacquizz Rodgers(TB - RB),Milk Man,Milk Man,RB
+2013,13,150,Roy Helu Jr.(Oak - RB),poppy's aven...,Poppy's Champions,RB
+2013,13,151,Matt Prater(Det - K),Surace,Surace,K
+2013,13,152,Kenny Stills(Mia - WR),The People's...,The People's Champ,WR
+2013,13,153,Lance Dunbar(LAR - RB),The Mighty A...,The Mighty Albatross,RB
+2013,13,154,Alshon Jeffery(Phi - WR),The Black Sh...,The Black Shepherd,WR
+2013,13,155,Andre Roberts(Atl - WR),Starvin' Marvin,The Wolf of Greek St,WR
+2013,13,156,Arizona(Ari - DEF),Commissioner Gordon,Commissioner Gordon,DEF
+2013,14,157,Sebastian Janikowski(Oak - K),Commissioner Gordon,Commissioner Gordon,K
+2013,14,158,Brandon Pettigrew(Det - TE),Starvin' Marvin,The Wolf of Greek St,TE
+2013,14,159,David Akers(Det - K),The Black Sh...,The Black Shepherd,K
+2013,14,160,Jermaine Gresham(Ari - TE),The Mighty A...,The Mighty Albatross,TE
+2013,14,161,Ben Roethlisberger(Pit - QB),The People's...,The People's Champ,QB
+2013,14,162,Andy Dalton(Cin - QB),Surace,Surace,QB
+2013,14,163,Los Angeles(LAR - DEF),poppy's aven...,Poppy's Champions,DEF
+2013,14,164,Isaiah Pead(Mia - RB),Milk Man,Milk Man,RB
+2013,14,165,Shonn Greene(Ten - RB),GhostingTheL...,GhostingTheLombardi,RB
+2013,14,166,LaMichael James(Mia - RB),HEAD,Black Mass,RB
+2013,14,167,Christine Michael(Ind - RB),Dune Squad,Dune Squad,RB
+2013,14,168,Denarius Moore(Buf - WR),richard,richard,WR
+2013,15,169,Baltimore(Bal - DEF),richard,richard,DEF
+2013,15,170,Tampa Bay(TB - DEF),Dune Squad,Dune Squad,DEF
+2013,15,171,Darrius Heyward-Bey(Pit - WR),HEAD,Black Mass,WR
+2013,15,172,Adam Vinatieri(Ind - K),GhostingTheL...,GhostingTheLombardi,K
+2013,15,173,Josh Freeman(Ind - QB),Milk Man,Milk Man,QB
+2013,15,174,Steven Hauschka(Buf - K),poppy's aven...,Poppy's Champions,K
+2013,15,175,Aaron Dobson(Ari - WR),Surace,Surace,WR
+2013,15,176,Robert Turbin(Ind - RB),The People's...,The People's Champ,RB
+2013,15,177,Coby Fleener(NO - TE),The Mighty A...,The Mighty Albatross,TE
+2013,15,178,New York(NYJ - DEF),The Black Sh...,The Black Shepherd,DEF
+2013,15,179,Bilal Powell(NYJ - RB),Starvin' Marvin,The Wolf of Greek St,RB
+2013,15,180,Jay Cutler(Chi - QB),Commissioner Gordon,Commissioner Gordon,QB
+2012,1,1,Aaron Rodgers(GB - QB),richard,richard,QB
+2012,1,2,LeSean McCoy(Buf - RB),Comeback Kids,Dune Squad,RB
+2012,1,3,Arian Foster(Mia - RB),Foxecutioners,The People's Champ,RB
+2012,1,4,Ray Rice(Bal - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,1,5,Tom Brady(NE - QB),Falco's Finest,The Wolf of Greek St,QB
+2012,1,6,Calvin Johnson(Det - WR),Surace,Surace,WR
+2012,1,7,Chris Johnson(Ari - RB),Commissioner Gordon,Commissioner Gordon,RB
+2012,1,8,Ryan Mathews(Phi - RB),The Mighty A...,The Mighty Albatross,RB
+2012,1,9,Jamaal Charles(Den - RB),The Black Sh...,The Black Shepherd,RB
+2012,1,10,Darren McFadden(Dal - RB),HEAD,Black Mass,RB
+2012,1,11,Jimmy Graham(Sea - TE),f.ftball ant...,Poppy's Champions,TE
+2012,1,12,Maurice Jones-Drew(Jax - RB),Expired Milk,Milk Man,RB
+2012,2,13,Trent Richardson(Bal - RB),Expired Milk,Milk Man,RB
+2012,2,14,Drew Brees(NO - QB),f.ftball ant...,Poppy's Champions,QB
+2012,2,15,Wes Welker(LAR - WR),HEAD,Black Mass,WR
+2012,2,16,Matthew Stafford(Det - QB),The Black Sh...,The Black Shepherd,QB
+2012,2,17,Andre Johnson(Hou - WR),The Mighty A...,The Mighty Albatross,WR
+2012,2,18,Matt Forte(NYJ - RB),Commissioner Gordon,Commissioner Gordon,RB
+2012,2,19,Cam Newton(Car - QB),Surace,Surace,QB
+2012,2,20,Darren Sproles(Phi - RB),Falco's Finest,The Wolf of Greek St,RB
+2012,2,21,Mike Vick(Pit - QB),GhostingTheL...,GhostingTheLombardi,QB
+2012,2,22,Rob Gronkowski(NE - TE),Foxecutioners,The People's Champ,TE
+2012,2,23,DeMarco Murray(Ten - RB),Comeback Kids,Dune Squad,RB
+2012,2,24,Larry Fitzgerald(Ari - WR),richard,richard,WR
+2012,3,25,Greg Jennings(Mia - WR),richard,richard,WR
+2012,3,26,A.J. Green(Cin - WR),Comeback Kids,Dune Squad,WR
+2012,3,27,Tony Romo(Dal - QB),Foxecutioners,The People's Champ,QB
+2012,3,28,Roddy White(Atl - WR),GhostingTheL...,GhostingTheLombardi,WR
+2012,3,29,Julio Jones(Atl - WR),Falco's Finest,The Wolf of Greek St,WR
+2012,3,30,Adrian Peterson(NO - RB),Surace,Surace,RB
+2012,3,31,Victor Cruz(Chi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,3,32,Steven Jackson(NE - RB),The Mighty A...,The Mighty Albatross,RB
+2012,3,33,Fred Jackson(Sea - RB),The Black Sh...,The Black Shepherd,RB
+2012,3,34,Brandon Marshall(NYG - WR),HEAD,Black Mass,WR
+2012,3,35,Hakeem Nicks(NO - WR),f.ftball ant...,Poppy's Champions,WR
+2012,3,36,Steve Smith Sr.(Bal - WR),Expired Milk,Milk Man,WR
+2012,4,37,Jason Witten(Dal - TE),Expired Milk,Milk Man,TE
+2012,4,38,Michael Turner(Atl - RB),f.ftball ant...,Poppy's Champions,RB
+2012,4,39,Eli Manning(NYG - QB),HEAD,Black Mass,QB
+2012,4,40,Jordy Nelson(GB - WR),The Black Sh...,The Black Shepherd,WR
+2012,4,41,Percy Harvin(Buf - WR),The Mighty A...,The Mighty Albatross,WR
+2012,4,42,Marshawn Lynch(Oak - RB),Commissioner Gordon,Commissioner Gordon,RB
+2012,4,43,Demaryius Thomas(Den - WR),Surace,Surace,WR
+2012,4,44,Roy Helu Jr.(Oak - RB),Falco's Finest,The Wolf of Greek St,RB
+2012,4,45,Doug Martin(TB - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,4,46,Frank Gore(Ind - RB),Foxecutioners,The People's Champ,RB
+2012,4,47,Philip Rivers(LAC - QB),Comeback Kids,Dune Squad,QB
+2012,4,48,Reggie Bush(Buf - RB),richard,richard,RB
+2012,5,49,Marques Colston(NO - WR),richard,richard,WR
+2012,5,50,Dez Bryant(Dal - WR),Comeback Kids,Dune Squad,WR
+2012,5,51,Mike Wallace(Bal - WR),Foxecutioners,The People's Champ,WR
+2012,5,52,Jeremy Maclin(Bal - WR),GhostingTheL...,GhostingTheLombardi,WR
+2012,5,53,Vernon Davis(Was - TE),Falco's Finest,The Wolf of Greek St,TE
+2012,5,54,Ahmad Bradshaw(Ind - RB),Surace,Surace,RB
+2012,5,55,Vincent Jackson(TB - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,5,56,Peyton Manning(Den - QB),The Mighty A...,The Mighty Albatross,QB
+2012,5,57,Brandon Lloyd(SF - WR),The Black Sh...,The Black Shepherd,WR
+2012,5,58,Jahvid Best(Det - RB),HEAD,Black Mass,RB
+2012,5,59,Dwayne Bowe(Cle - WR),f.ftball ant...,Poppy's Champions,WR
+2012,5,60,Matt Ryan(Atl - QB),Expired Milk,Milk Man,QB
+2012,6,61,Stevie Johnson(LAC - WR),Expired Milk,Milk Man,WR
+2012,6,62,Kenny Britt(Cle - WR),f.ftball ant...,Poppy's Champions,WR
+2012,6,63,Antonio Gates(LAC - TE),HEAD,Black Mass,TE
+2012,6,64,Miles Austin(Phi - WR),The Black Sh...,The Black Shepherd,WR
+2012,6,65,Eric Decker(NYJ - WR),The Mighty A...,The Mighty Albatross,WR
+2012,6,66,Robert Meachem(NO - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,6,67,Pierre Garcon(SF - WR),Surace,Surace,WR
+2012,6,68,Santonio Holmes(Chi - WR),Falco's Finest,The Wolf of Greek St,WR
+2012,6,69,Jermichael Finley(GB - TE),GhostingTheL...,GhostingTheLombardi,TE
+2012,6,70,DeSean Jackson(TB - WR),Foxecutioners,The People's Champ,WR
+2012,6,71,Isaac Redman(Pit - RB),Comeback Kids,Dune Squad,RB
+2012,6,72,Aaron Hernandez(NE - TE),richard,richard,TE
+2012,7,73,Jonathan Stewart(Car - RB),richard,richard,RB
+2012,7,74,Robert Griffin III(Cle - QB),Comeback Kids,Dune Squad,QB
+2012,7,75,San Francisco(SF - DEF),Foxecutioners,The People's Champ,DEF
+2012,7,76,Shonn Greene(Ten - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,7,77,Ben Tate(Pit - RB),Falco's Finest,The Wolf of Greek St,RB
+2012,7,78,Jacob Tamme(Atl - TE),Surace,Surace,TE
+2012,7,79,Jay Cutler(Chi - QB),Commissioner Gordon,Commissioner Gordon,QB
+2012,7,80,Stevan Ridley(Atl - RB),The Mighty A...,The Mighty Albatross,RB
+2012,7,81,Beanie Wells(Ari - RB),The Black Sh...,The Black Shepherd,RB
+2012,7,82,Anquan Boldin(Det - WR),HEAD,Black Mass,WR
+2012,7,83,Antonio Brown(Pit - WR),f.ftball ant...,Poppy's Champions,WR
+2012,7,84,Darrius Heyward-Bey(Pit - WR),Expired Milk,Milk Man,WR
+2012,8,85,Michael Bush(Ari - RB),Expired Milk,Milk Man,RB
+2012,8,86,BenJarvus Green-Ellis(Cin - RB),f.ftball ant...,Poppy's Champions,RB
+2012,8,87,C.J. Spiller(KC - RB),HEAD,Black Mass,RB
+2012,8,88,Brandon Pettigrew(Det - TE),The Black Sh...,The Black Shepherd,TE
+2012,8,89,Fred Davis(NE - TE),The Mighty A...,The Mighty Albatross,TE
+2012,8,90,Justin Blackmon(Jax - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,8,91,Reggie Wayne(NE - WR),Surace,Surace,WR
+2012,8,92,Peyton Hillis(NYG - RB),Falco's Finest,The Wolf of Greek St,RB
+2012,8,93,Willis McGahee(Cle - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,8,94,Sidney Rice(Sea - WR),Foxecutioners,The People's Champ,WR
+2012,8,95,Michael Floyd(Min - WR),Comeback Kids,Dune Squad,WR
+2012,8,96,James Starks(GB - RB),richard,richard,RB
+2012,9,97,Donald Brown(NE - RB),richard,richard,RB
+2012,9,98,Andrew Luck(Ind - QB),Comeback Kids,Dune Squad,QB
+2012,9,99,Torrey Smith(Phi - WR),Foxecutioners,The People's Champ,WR
+2012,9,100,Ben Roethlisberger(Pit - QB),GhostingTheL...,GhostingTheLombardi,QB
+2012,9,101,Houston(Hou - DEF),Falco's Finest,The Wolf of Greek St,DEF
+2012,9,102,LeGarrette Blount(Phi - RB),Surace,Surace,RB
+2012,9,103,Tony Gonzalez(Atl - TE),Commissioner Gordon,Commissioner Gordon,TE
+2012,9,104,David Akers(Det - K),The Mighty A...,The Mighty Albatross,K
+2012,9,105,Denarius Moore(Buf - WR),The Black Sh...,The Black Shepherd,WR
+2012,9,106,Chicago(Chi - DEF),HEAD,Black Mass,DEF
+2012,9,107,DeAngelo Williams(Pit - RB),f.ftball ant...,Poppy's Champions,RB
+2012,9,108,Matt Schaub(Atl - QB),Expired Milk,Milk Man,QB
+2012,10,109,Baltimore(Bal - DEF),Expired Milk,Milk Man,DEF
+2012,10,110,Ryan Williams(Dal - RB),f.ftball ant...,Poppy's Champions,RB
+2012,10,111,Sebastian Janikowski(Oak - K),HEAD,Black Mass,K
+2012,10,112,Titus Young(LAR - WR),The Black Sh...,The Black Shepherd,WR
+2012,10,113,Lance Moore(NO - WR),The Mighty A...,The Mighty Albatross,WR
+2012,10,114,Coby Fleener(NO - TE),Commissioner Gordon,Commissioner Gordon,TE
+2012,10,115,New York(NYJ - DEF),Surace,Surace,DEF
+2012,10,116,Jermaine Gresham(Ari - TE),Falco's Finest,The Wolf of Greek St,TE
+2012,10,117,Jacquizz Rodgers(TB - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,10,118,Dustin Keller(Mia - TE),Foxecutioners,The People's Champ,TE
+2012,10,119,Mark Ingram(NO - RB),Comeback Kids,Dune Squad,RB
+2012,10,120,Mason Crosby(GB - K),richard,richard,K
+2012,11,121,Randy Moss(SF - WR),richard,richard,WR
+2012,11,122,Kendall Wright(Chi - WR),Comeback Kids,Dune Squad,WR
+2012,11,123,Stephen Gostkowski(NE - K),Foxecutioners,The People's Champ,K
+2012,11,124,Santana Moss(Was - WR),GhostingTheL...,GhostingTheLombardi,WR
+2012,11,125,Dan Bailey(Dal - K),Falco's Finest,The Wolf of Greek St,K
+2012,11,126,David Wilson(NYG - RB),Surace,Surace,RB
+2012,11,127,Toby Gerhart(Jax - RB),Commissioner Gordon,Commissioner Gordon,RB
+2012,11,128,Jake Locker(Ten - QB),The Mighty A...,The Mighty Albatross,QB
+2012,11,129,Pierre Thomas(Was - RB),The Black Sh...,The Black Shepherd,RB
+2012,11,130,Malcom Floyd(LAC - WR),HEAD,Black Mass,WR
+2012,11,131,Jared Cook(Oak - TE),f.ftball ant...,Poppy's Champions,TE
+2012,11,132,John Kasay(Car - K),Expired Milk,Milk Man,K
+2012,12,133,Stephen Hill(Car - WR),Expired Milk,Milk Man,WR
+2012,12,134,Carson Palmer(Ari - QB),f.ftball ant...,Poppy's Champions,QB
+2012,12,135,Matt Flynn(NO - QB),HEAD,Black Mass,QB
+2012,12,136,Buffalo(Buf - DEF),The Black Sh...,The Black Shepherd,DEF
+2012,12,137,Philadelphia(Phi - DEF),The Mighty A...,The Mighty Albatross,DEF
+2012,12,138,Mike Williams(KC - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,12,139,Olindo Mare(Chi - K),Surace,Surace,K
+2012,12,140,Michael Crabtree(Oak - WR),Falco's Finest,The Wolf of Greek St,WR
+2012,12,141,Ronnie Hillman(LAC - RB),GhostingTheL...,GhostingTheLombardi,RB
+2012,12,142,Andy Dalton(Cin - QB),Foxecutioners,The People's Champ,QB
+2012,12,143,Matt Bryant(Atl - K),Comeback Kids,Dune Squad,K
+2012,12,144,Rueben Randle(Chi - WR),richard,richard,WR
+2012,13,145,Detroit(Det - DEF),richard,richard,DEF
+2012,13,146,Greg Olsen(Car - TE),Comeback Kids,Dune Squad,TE
+2012,13,147,Bernard Scott(Bal - RB),Foxecutioners,The People's Champ,RB
+2012,13,148,Greg Little(Buf - WR),GhostingTheL...,GhostingTheLombardi,WR
+2012,13,149,Kellen Winslow(NYJ - TE),Falco's Finest,The Wolf of Greek St,TE
+2012,13,150,Josh Freeman(Ind - QB),Surace,Surace,QB
+2012,13,151,Alshon Jeffery(Phi - WR),Commissioner Gordon,Commissioner Gordon,WR
+2012,13,152,Martellus Bennett(GB - TE),The Mighty A...,The Mighty Albatross,TE
+2012,13,153,Ryan Fitzpatrick(TB - QB),The Black Sh...,The Black Shepherd,QB
+2012,13,154,Owen Daniels(Den - TE),HEAD,Black Mass,TE
+2012,13,155,Rob Bironas(Ten - K),f.ftball ant...,Poppy's Champions,K
+2012,13,156,Brent Celek(Phi - TE),Expired Milk,Milk Man,TE
+2012,14,157,John Kuhn(NO - RB),Expired Milk,Milk Man,RB
+2012,14,158,Kevin Smith(Det - RB),f.ftball ant...,Poppy's Champions,RB
+2012,14,159,"Dexter McCluster(LAC - WR,RB)",HEAD,Black Mass,RB
+2012,14,160,Laurent Robinson(Jax - WR),The Black Sh...,The Black Shepherd,WR
+2012,14,161,Joe Flacco(Bal - QB),The Mighty A...,The Mighty Albatross,QB
+2012,14,162,Pittsburgh(Pit - DEF),Commissioner Gordon,Commissioner Gordon,DEF
+2012,14,163,Mikel Leshoure(Det - RB),Surace,Surace,RB
+2012,14,164,Tim Hightower(SF - RB),Falco's Finest,The Wolf of Greek St,RB
+2012,14,165,Green Bay(GB - DEF),GhostingTheL...,GhostingTheLombardi,DEF
+2012,14,166,Chad Johnson(Mia - WR),Foxecutioners,The People's Champ,WR
+2012,14,167,Doug Baldwin(Sea - WR),Comeback Kids,Dune Squad,WR
+2012,14,168,Kevin Kolb(Buf - QB),richard,richard,QB
+2012,15,169,Cedric Benson(GB - RB),richard,richard,RB
+2012,15,170,New York(NYG - DEF),Comeback Kids,Dune Squad,DEF
+2012,15,171,Cincinnati(Cin - DEF),Foxecutioners,The People's Champ,DEF
+2012,15,172,Jason Hanson(Det - K),GhostingTheL...,GhostingTheLombardi,K
+2012,15,173,Visanthe Shiancoe(Ten - TE),Falco's Finest,The Wolf of Greek St,TE
+2012,15,174,Nate Washington(NE - WR),Surace,Surace,WR
+2012,15,175,Dan Carpenter(Buf - K),Commissioner Gordon,Commissioner Gordon,K
+2012,15,176,Seattle(Sea - DEF),The Mighty A...,The Mighty Albatross,DEF
+2012,15,177,Mike Nugent(Cin - K),The Black Sh...,The Black Shepherd,K
+2012,15,178,Leonard Hankerson(Buf - WR),HEAD,Black Mass,WR
+2012,15,179,New England(NE - DEF),f.ftball ant...,Poppy's Champions,DEF
+2012,15,180,Tim Tebow(Phi - QB),Expired Milk,Milk Man,QB

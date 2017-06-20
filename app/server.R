@@ -119,6 +119,13 @@ shinyServer(function(input, output, session) {
       return(data)
     })
     
+     data <- draft %>%
+             filter(Round == 1) %>%
+             group_by(Team) %>%
+             summarize(Ave_Pick = mean(Pick),
+                       High_Pick = max(Pick),
+                       Low_Pick = min(Pick))
+    
     
 ######################################################################################################################
 ################################### Create Plots for Output ##########################################################

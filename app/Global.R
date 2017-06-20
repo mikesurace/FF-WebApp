@@ -1,4 +1,3 @@
-#devtools::install_github(repo = "maksimhorowitz/nflscrapR") Only run this line if need to install
 
 # Required Packages and functions
 library(shiny)
@@ -21,7 +20,6 @@ library(plotly)
 library(DT)
 library(tidyr)
 library(stringr)
-library(nflscrapR)
 
 # CSS switch
 mycss = 'Flatly.css'
