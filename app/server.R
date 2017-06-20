@@ -87,7 +87,7 @@ shinyServer(function(input, output, session) {
     ############################### Draft Analysis ################################
     ###############################################################################
     draftTendTeam <- reactive({
-          data <- draft %>%
+          data <- final_draft %>%
                     filter(Round == input$draftRound) %>%
                     group_by(Team,Round) %>%
                     summarize(WR_Pct = mean(WR),
@@ -119,13 +119,14 @@ shinyServer(function(input, output, session) {
       return(data)
     })
     
-     data <- draft %>%
-             filter(Round == 1) %>%
-             group_by(Team) %>%
-             summarize(Ave_Pick = mean(Pick),
-                       High_Pick = max(Pick),
-                       Low_Pick = min(Pick))
-    
+     data <- final_draft %>%
+                group_by(Year,Team) %>%
+                summarize(Total = sum(Fantasy_Pts))
+     data1 <- Reg_Data_01 %>%
+                group_by(Year,Team) %>%
+                summarize(Season_Pts = sum(Points.For))
+     
+     test <- left_join(data,data1, by = c('Year' = 'Year', 'Team' = 'Team'))
     
 ######################################################################################################################
 ################################### Create Plots for Output ##########################################################

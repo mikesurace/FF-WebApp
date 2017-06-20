@@ -123,5 +123,5 @@ rankings_final <- rankings[c(1,23,2,3,5,7,13,14,16,17)] %>%
 team_list <- reg_data$Team %>% unique
 year_list <- c(2012,2013,2014,2015,2016)
 
-save(full_data, playoffs_final, rankings_final, Reg_Data_01, reg_statistics,reg_final,draft, 
+save(full_data, playoffs_final, rankings_final, Reg_Data_01, reg_statistics,reg_final, 
         team_list, year_list, final_draft, file = 'data/all.RData')
