@@ -107,7 +107,7 @@ shinyServer(function(input, output, session) {
                                             formatPercentage(c('WR_Pct','RB_Pct','QB_Pct','TE_Pct','DEF_Pct','K_Pct'))})
     
     draftTendRound <- reactive({
-      data <- draft %>%
+      data <- final_draft %>%
         filter(Round %between% c(1,6)) %>%
         group_by(Round) %>%
         summarize(WR_Pct = mean(WR),
@@ -118,15 +118,6 @@ shinyServer(function(input, output, session) {
                   K_Pct = mean(K))
       return(data)
     })
-    
-     data <- final_draft %>%
-                group_by(Year,Team) %>%
-                summarize(Total = sum(Fantasy_Pts))
-     data1 <- Reg_Data_01 %>%
-                group_by(Year,Team) %>%
-                summarize(Season_Pts = sum(Points.For))
-     
-     test <- left_join(data,data1, by = c('Year' = 'Year', 'Team' = 'Team'))
     
 ######################################################################################################################
 ################################### Create Plots for Output ##########################################################
