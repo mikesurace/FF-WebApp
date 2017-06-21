@@ -4,6 +4,7 @@
 #Read csv files
 source(file = 'actuals.R')
 source(file = 'readProj.R')
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 
 reg_data <- read.csv(file = "data/Reg_Data.csv" )
 playoff_data <- read.csv(file = "data/Playoff_Data.csv")
@@ -56,7 +57,6 @@ Ave_K <- proj %>%
   summarize(Ave_K = mean(Proj_Pts))
 
 ###MERGE DRAFT RESULTS, PROJECTED FF PTS, AND ACTUAL FF PTS 
-trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 draft$Name <- trim(draft$Name)
 actuals$Name <- trim(actuals$Name)
 
@@ -69,13 +69,13 @@ Draft_Act_Proj_00 <- left_join(Draft_Actuals,proj, by = c('Year' = 'Year','Name'
 Draft_Act_Proj_01 <- left_join(Draft_Act_Proj_00,Ave_Def, by = c('Name' = 'Name'))
 Draft_Act_Proj_02 <- left_join(Draft_Act_Proj_01,Ave_K, by = c('Name' = 'Name'))
 #Assign Average Defense projections for Kickers and Def prior to 2014.
-Draft_Act_Proj_02$Projections <- ifelse(Draft_Act_Proj_02$Year < 2014 & Draft_Act_Proj$POS == "DEF",Draft_Act_Proj_02$Ave_Def,
-                                 ifelse(Draft_Act_Proj_02$Year < 2014 & Draft_Act_Proj$POS == "K",Draft_Act_Proj_02$Ave_K,
+Draft_Act_Proj_02$Projections <- ifelse(Draft_Act_Proj_02$Year < 2014 & Draft_Act_Proj_02$POS == "DEF",Draft_Act_Proj_02$Ave_Def,
+                                 ifelse(Draft_Act_Proj_02$Year < 2014 & Draft_Act_Proj_02$POS == "K",Draft_Act_Proj_02$Ave_K,
                                         Draft_Act_Proj_02$Proj_Pts))
 
 Draft_Act_Proj <- Draft_Act_Proj_02 %>%
                       select(-Proj_Pts,-Ave_Def,-Ave_K)
-Draft_Act_Proj[is.na(Draft_Act_Proj)] <- Draft_Act_Proj$Fantasy_Pts
+Draft_Act_Proj[is.na(Draft_Act_Proj)] <- 0 
 
 #################################################################################
 #####################  Regular Season Statistics ################################
