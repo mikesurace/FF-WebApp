@@ -88,36 +88,53 @@ shinyServer(function(input, output, session) {
     ###############################################################################
     draftTendTeam <- reactive({
           data <- Draft_Act_Proj %>%
-                    filter(Round %between% input$dtRound, Team == input$dtTeam, Year %between% input$dtTime) %>%
+                    filter(Round < 11, Team == input$dtTeam) %>%
                     group_by(Team,Round) %>%
-                    summarize(WR_Pct = mean(WR),
-                              QB_Pct = mean(QB),
-                              TE_Pct = mean(TE),
-                              RB_Pct = mean(RB),
-                              DEF_Pct = mean(DEF),
-                              K_Pct = mean(K)) %>%
-                    select(Team, Round,QB_Pct,RB_Pct,WR_Pct,TE_Pct,DEF_Pct,K_Pct)
+                    summarize(WideReceiver = mean(WR),
+                              QuarterBack = mean(QB),
+                              TightEnd = mean(TE),
+                              RunningBack = mean(RB)) %>% 
+                    ungroup() %>%
+                    select(Round,QuarterBack,RunningBack,WideReceiver,TightEnd) 
           return(data)
           })
     
     
     output$Draft <- DT::renderDataTable({datatable(draftTendTeam(), options = list(pageLength = 25, dom = 't'), 
                                                                     rownames = FALSE, 
-                                                                    colnames = c('Team', 'QB','RB','WR','TE','DEF','K')) %>%
-                                            formatPercentage(c('WR_Pct','RB_Pct','QB_Pct','TE_Pct','DEF_Pct','K_Pct'))})
+                                                                    colnames = c('Round','QuarterBack','Running Back',
+                                                                                 'Wide Receiver','Tight End')) %>%
+                                            formatPercentage(c('QuarterBack','RunningBack','WideReceiver','TightEnd'))})
     
-    draftTendRound <- reactive({
-      data <- Draft_Act_Proj %>%
-        filter(Round %between% c(1,6)) %>%
-        group_by(Round) %>%
-        summarize(WR_Pct = mean(WR),
-                  QB_Pct = mean(QB),
-                  TE_Pct = mean(TE),
-                  RB_Pct = mean(RB),
-                  DEF_Pct = mean(DEF),
-                  K_Pct = mean(K))
-      return(data)
-    })
+    dtCompare <- reactive({
+        data_team <- Draft_Act_Proj %>%
+                  filter(Round < 11) %>%
+                  group_by(Team, Round) %>%
+                  summarize(WideReceiver = mean(WR),
+                            QuarterBack = mean(QB),
+                            TightEnd = mean(TE),
+                            RunningBack = mean(RB)) %>% 
+                  ungroup() %>%
+                  select(Team,Round,QuarterBack,RunningBack,WideReceiver,TightEnd) %>%
+                  gather("Position","Draft_Perc",3:6)
+
+        data_all <- Draft_Act_Proj %>%
+          filter(Round < 11) %>%
+          group_by(Round) %>%
+          summarize(WideReceiver = mean(WR),
+                    QuarterBack = mean(QB),
+                    TightEnd = mean(TE),
+                    RunningBack = mean(RB)) %>% 
+          ungroup() %>%
+          select(Round,QuarterBack,RunningBack,WideReceiver,TightEnd) %>%
+          gather("Position","Draft_Perc_All",2:5)
+        
+        data_merge <- left_join(data_team,data_all,by = c('Round' = 'Round','Position' = 'Position')) %>%
+                        mutate(Difference = Draft_Perc - Draft_Perc_All) %>%
+                        filter(Team == input$dtTeam) %>%
+                        select(-Draft_Perc,-Draft_Perc_All, -Team) %>%
+                        spread(Position,Difference)
+        return(data_merge)})
     
     drTeam <- reactive({
       data <- Draft_Act_Proj %>%
@@ -147,7 +164,8 @@ shinyServer(function(input, output, session) {
     
     output$draftgrid <- DT::renderDataTable({datatable(grid(), 
                                                        options = list(pageLength = 25, 
-                                                                      dom = 't'), 
+                                                                      dom = 't'),
+                                                       selection = 'single',
                                                        rownames = FALSE,
                                                        colnames = c('Team','Round 1','Round 2',
                                                                     'Round 3','Round 4',
@@ -188,19 +206,16 @@ shinyServer(function(input, output, session) {
     ############################### Draft Analysis ################################
     ###############################################################################
             output$TrendRound <- renderPlotly({
-              plot_ly(draftTendRound(), 
+              plot_ly(dtCompare(),
                       type = "bar",
-                      x = ~Round, 
-                      y = ~WR_Pct, name = "WR") %>%
-                add_trace(y = ~RB_Pct, name = "RB") %>%
-                add_trace(y = ~QB_Pct, name = "QB") %>%
-                add_trace(y = ~TE_Pct, name = "TE") %>%
-                layout(title = "Overall Draft Tendency",
+                      x = ~Round,
+                      y = ~QuarterBack, name = "QB") %>%
+                add_trace(y = ~RunningBack, name = "RB") %>%
+                add_trace(y = ~WideReceiver, name = "WR") %>%
+                add_trace(y = ~TightEnd, name = "TE") %>%
+                layout(title = "GM Tendencies vs League",
                        barmode = 'group',
-                       autosize = F, width = 600, height = 500, margin = m,
-                       yaxis = list(title = '% Drafted'),
-                       xaxis = list(title = ''),
-                       legend = list(x = .99, y = .99))})
+                       yaxis = list(title = '% Drafted'))})
     
     #######################################################################
     ########################### Trend Analysis ############################

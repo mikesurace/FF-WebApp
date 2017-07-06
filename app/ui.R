@@ -108,23 +108,16 @@ shinyUI(fluidPage(
                                                     DT::dataTableOutput('draftgrid'))))),
                            
                   tabPanel("Trends & Tendencies",
-                          fluidPage(sidebarLayout(
-                                  sidebarPanel(h1("Historical Draft Trends & Tendencies", align = 'center'),
-                                               p("This page is designed to provide insights into how the league, 
-                                                   as well as specific GMs, values certain positions. The side panel 
-                                                   allows the user to change parameters for which seasons, GMs, and 
-                                                   Rounds are included in the analysis. Hey Shep, maybe its time to 
-                                                   move away from the running backs?"),
-                                               br(),br(),
-                                               selectInput('dtTeam',"Choose General Manager(s):",team_list),
-                                               sliderInput('dtRound',"Select Round(s):", min = 1, max = 15, value = c(1,15)),
-                                               sliderInput('dtTime',"Seasons Included:",min = 2012,max = 2016,
-                                                           value = c(2012,2016),sep = "")),
-                                  mainPanel(fluidPage(
-                                            DT::dataTableOutput('Draft'))),
-                                  position = 'left',
-                                  fluid = TRUE)
-                          )),
+                          fluidPage(fluidRow(column(width = 6,
+                                                    includeMarkdown('html/DraftTrends.Rmd')),
+                                             column(width = 3,
+                                                    selectInput('dtTeam',"Choose General Manager(s):",team_list))),
+                                    br(),br(),
+                                    fluidRow(column(width = 5,
+                                                    DT::dataTableOutput('Draft')),
+                                             column(width = 7,
+                                                    plotlyOutput('TrendRound'))),
+                                    br())),
                   tabPanel("Draft Returns",
                          fluidPage(fluidRow(column(width = 3,
                                                    selectInput('draftGM',"Select a GM:",team_list)),

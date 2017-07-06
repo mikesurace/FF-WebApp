@@ -3,5 +3,5 @@ title: "DraftTrends"
 output: html_document
 ---
 
-###Historical Trends and Tendencies
+### Historical Trends and Tendencies  
 This page is designed to provide insights into how the league, as well as specific GMs, values certain positions. The side panel allows the user to change parameters for which seasons, GMs, and Rounds are included in the analysis. Hey Shep, maybe its time to move away from the running backs?  
