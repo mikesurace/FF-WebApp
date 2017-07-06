@@ -100,14 +100,39 @@ shinyUI(fluidPage(
                                               column(width = 4, offset = 1, img(src = "jerry.jpg",width = 300, height = 300))),
                                     br(), br(), br())),
                  
-                 tabPanel("Draft Day",
-                          fluidPage(fluidRow(column(width = 3,
-                                                    selectInput('draftRound',"Select a Round:",c(1:12)))),
-                                    fluidRow(column(width = 6,
-                                                    DT::dataTableOutput('Draft')),
-                                             column(width = 6,
-                                                    plotlyOutput('TrendRound'))))
-                 
-))))
+                 navbarMenu("Draft Corner", icon = icon('bar-chart'),
+                  tabPanel("Historical Results",
+                           fluidPage(fluidRow(column(width = 3,
+                                                    selectInput('yr',"Select a Year:",c(2016,2015,2014,2013,2012)))),
+                                    fluidRow(column(width = 12,
+                                                    DT::dataTableOutput('draftgrid'))))),
+                           
+                  tabPanel("Trends & Tendencies",
+                          fluidPage(sidebarLayout(
+                                  sidebarPanel(h1("Historical Draft Trends & Tendencies", align = 'center'),
+                                               p("This page is designed to provide insights into how the league, 
+                                                   as well as specific GMs, values certain positions. The side panel 
+                                                   allows the user to change parameters for which seasons, GMs, and 
+                                                   Rounds are included in the analysis. Hey Shep, maybe its time to 
+                                                   move away from the running backs?"),
+                                               br(),br(),
+                                               selectInput('dtTeam',"Choose General Manager(s):",team_list),
+                                               sliderInput('dtRound',"Select Round(s):", min = 1, max = 15, value = c(1,15)),
+                                               sliderInput('dtTime',"Seasons Included:",min = 2012,max = 2016,
+                                                           value = c(2012,2016),sep = "")),
+                                  mainPanel(fluidPage(
+                                            DT::dataTableOutput('Draft'))),
+                                  position = 'left',
+                                  fluid = TRUE)
+                          )),
+                  tabPanel("Draft Returns",
+                         fluidPage(fluidRow(column(width = 3,
+                                                   selectInput('draftGM',"Select a GM:",team_list)),
+                                            column(width = 3,
+                                                  selectInput('draftyear',"Select a Time:",c(2016,2015,2014,2013,2012)))),
+                                   fluidRow(column(width = 12,
+                                                   DT::dataTableOutput('draftresults'))))))               
+                          
+)))
 
 

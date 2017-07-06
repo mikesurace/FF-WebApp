@@ -76,6 +76,9 @@ Draft_Act_Proj_02$Projections <- ifelse(Draft_Act_Proj_02$Year < 2014 & Draft_Ac
 Draft_Act_Proj <- Draft_Act_Proj_02 %>%
                       select(-Proj_Pts,-Ave_Def,-Ave_K)
 Draft_Act_Proj[is.na(Draft_Act_Proj)] <- 0 
+Draft_Act_Proj <- Draft_Act_Proj[!(Draft_Act_Proj$Team == "Milk Man" & 
+                                   Draft_Act_Proj$Name == "Zach Miller" & 
+                                   Draft_Act_Proj$Projections == 0),]
 
 #################################################################################
 #####################  Regular Season Statistics ################################
