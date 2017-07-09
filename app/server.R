@@ -86,6 +86,8 @@ shinyServer(function(input, output, session) {
     ###############################################################################
     ############################### Draft Analysis ################################
     ###############################################################################
+    
+    ############# START TAB - DRAFT TENDENCIES ####################
     draftTendTeam <- reactive({
           data <- Draft_Act_Proj %>%
                     filter(Round < 11, Team == input$dtTeam) %>%
@@ -105,7 +107,8 @@ shinyServer(function(input, output, session) {
                                                                     colnames = c('Round','QuarterBack','Running Back',
                                                                                  'Wide Receiver','Tight End')) %>%
                                             formatPercentage(c('QuarterBack','RunningBack','WideReceiver','TightEnd'))})
-    
+
+    #Data set used to produce chart for Draft trend analysis
     dtCompare <- reactive({
         data_team <- Draft_Act_Proj %>%
                   filter(Round < 11) %>%
@@ -136,66 +139,164 @@ shinyServer(function(input, output, session) {
                         spread(Position,Difference)
         return(data_merge)})
     
-    drTeam <- reactive({
-      data <- Draft_Act_Proj %>%
-        filter(Year == input$draftyear, Team == input$draftGM) %>%
-        mutate(Performance = (Fantasy_Pts - Projections),Percent = Performance/Projections) %>%
-        select(Round, Name, POS,Projections,Fantasy_Pts,Performance,Percent)
-      
-      return(data)
+    ############# END TAB - DRAFT TENDENCIES ####################
+    ############## START TAB - DRAFT RESULTS ##############
+    # Data set used to produce the draft grid that hold historical results.
+    grid <- reactive({
+      data <- Draft_Act_Proj %>% 
+        filter(Year == input$yr, Round < 11) %>%
+        select(Round,Team,Name) %>%
+        spread(Round,Name)
+      return(data)})
+    
+    output$draftgrid <- DT::renderDataTable({datatable(grid(),options = list(pageLength = 25,dom = 't'),selection = 'single',rownames = FALSE,
+                                                       colnames = c('Team','Round 1','Round 2','Round 3','Round 4','Round 5','Round 6','Round 7','Round 8','Round 9','Round 10')) %>%
+        formatStyle('Team',fontWeight = 'Bold')})
+    
+    ############# END TAB - DRAFT RESULTS ####################
+    ############# START TAB - PLAYER RETURNS ####################
+      #Dataset used to produce the data table in the Player returns tab.    
+      drTeam <- reactive({
+          data <- Draft_Act_Proj %>%
+            filter(Year == input$SeasonYear, Team == input$SeasonTeam) %>%
+            mutate(Performance = (Fantasy_Pts - Projections),Percent = Performance/Projections) %>%
+            select(Round, Name, POS,Projections,Fantasy_Pts,Performance,Percent)
+          
+          return(data)
+    
+        })
+    
+        output$draftresults <- DT::renderDataTable({datatable(drTeam(), options = list(pageLength = 25, dom = 't'),rownames = FALSE, 
+                                                              colnames = c('Round','Player','Position','Projected Points','Actual Points','Return','% Return')) %>%
+                                                        formatPercentage(c('Percent')) %>%
+                                                        formatRound(c('Projections','Performance','Fantasy_Pts'))})
+    
 
+    #Data set for leaderboard of the overal draft section.
+    BestDraft <- Draft_Act_Proj %>%
+              filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
+              mutate(Performance = Fantasy_Pts - Projections,Wgt = Performance*Projections) %>%
+              group_by(Team, Year) %>%
+              summarize(Total = sum(Projections),
+                        Wgt_Return = sum(Wgt))
+    BestDraft <- BestDraft %>%
+              mutate(Total_Return = Wgt_Return/Total) %>%
+              dplyr::arrange(desc(Total_Return)) %>%
+              select(-Total, -Wgt_Return) %>%
+              head(10)
+
+    output$TopDraft <- DT::renderDataTable({datatable(BestDraft, 
+                                                          options = list(pageLength = 25, dom = 't',
+                                                          initComplete = JS("function(settings, json) {",
+                                                          "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});","}")),
+                                                          rownames = FALSE,
+                                                          colnames = c('Team','Season','Total Draft Return')) %>%
+                                                          formatRound(c('Total_Return')) %>%
+                                                          formatStyle(names(BestDraft),background = 'white')})
+    
+          
+    #Data table shows GM Draft returns by Round
+    PtsPerRound <- reactive({
+      
+          data <- Draft_Act_Proj %>%
+                    select(Team, Year, Round, POS, Fantasy_Pts) %>%
+                    filter(Year %between% input$RoundYear) %>%
+                    group_by(Team,Round) %>%
+                    summarize(Pts = mean(Fantasy_Pts))
+          
+          data1 <- Draft_Act_Proj %>%
+                    select(Year, Round, POS, Fantasy_Pts) %>%
+                    filter(Year %between% input$RoundYear) %>%
+                    group_by(Round) %>%
+                    summarize(Rd_Pts = mean(Fantasy_Pts))
+          
+          data_all <- left_join(data,data1,by = c('Round' = 'Round')) %>%
+                      mutate(Difference = Pts - Rd_Pts) %>%
+                      filter(Round < 11, Team == input$RoundTeam)
+          
+          return(data_all)})
+    
+    output$RdPts <- DT::renderDataTable({datatable(PtsPerRound(), options = list(pageLength = 25, dom = 't'), 
+                                                   rownames = FALSE, 
+                                                   colnames = c('Team','Round','Return (Pts)',
+                                                                'League Average Return (Pts)','Difference'))})
+    ##Dataset for leaderboard by position
+      BestRd1 <- Draft_Act_Proj %>%
+        select(Team, Year, Round, POS, Fantasy_Pts) %>%
+        group_by(Team,Round) %>%
+        summarize(Pts = mean(Fantasy_Pts))
+      
+      BestRd2 <- Draft_Act_Proj %>%
+        select(Year, Round, POS, Fantasy_Pts) %>%
+        group_by(Round) %>%
+        summarize(Rd_Pts = mean(Fantasy_Pts))
+      
+      BestRound <- left_join(BestRd1,BestRd2,by = c('Round' = 'Round')) %>%
+        mutate(Difference = Pts - Rd_Pts) %>%
+        filter(Round < 11) %>%
+        dplyr::arrange(desc(Round),desc(Difference)) %>%
+        select(-Rd_Pts,-Pts)
+      
+      BestRound <- ddply(BestRound, "Round", function(x) head(x[order(x$Difference, decreasing = TRUE) , ], 1))
+    
+    output$BestRd <- DT::renderDataTable({datatable(BestRound, options = list(pageLength = 25, dom = 't'), 
+                                                   rownames = FALSE, 
+                                                   colnames = c('Team','Round','+/- League Average')) %>%
+                                            formatRound(c('Difference'))})
+    
+    
+    
+    ## Data table shows GM Draft returns by Position
+    PtsPerPos <- reactive({
+      
+      data <- Draft_Act_Proj %>%
+        select(Team, Year, Round, POS, Fantasy_Pts) %>%
+        filter(Year %between% input$PositionYear) %>%
+        group_by(Team,POS) %>%
+        summarize(Pts = mean(Fantasy_Pts))
+      
+      data1 <- Draft_Act_Proj %>%
+        select(Year, Round, POS, Fantasy_Pts) %>%
+        filter(Year %between% input$PositionYear) %>%
+        group_by(POS) %>%
+        summarize(Rd_Pts = mean(Fantasy_Pts))
+      
+      data_all <- left_join(data,data1,by = c('POS' = 'POS')) %>%
+        mutate(Difference = Pts - Rd_Pts) %>%
+        filter(Team == input$PositionTeam)
+      
+      return(data_all)
+      
     })
     
-    output$draftresults <- DT::renderDataTable({datatable(drTeam(), options = list(pageLength = 25, dom = 't'), 
-                                                          rownames = FALSE, 
-                                                          colnames = c('Round','Player','Position',
-                                                                       'Projected Points','Actual Points',
-                                                                       'Return','% Return')) %>%
-        formatPercentage(c('Percent')) %>%
-        formatRound(c('Projections','Performance','Fantasy_Pts'))})
-    
-    
-        grid <- reactive({
-          data <- Draft_Act_Proj %>% 
-                    filter(Year == input$yr, Round < 11) %>%
-                    select(Round,Team,Name) %>%
-                    spread(Round,Name)
-          return(data)})
-    
-    output$draftgrid <- DT::renderDataTable({datatable(grid(), 
-                                                       options = list(pageLength = 25, 
-                                                                      dom = 't'),
-                                                       selection = 'single',
-                                                       rownames = FALSE,
-                                                       colnames = c('Team','Round 1','Round 2',
-                                                                    'Round 3','Round 4',
-                                                                    'Round 5','Round 6',
-                                                                    'Round 7','Round 8',
-                                                                    'Round 9','Round 10')) %>%
-                                              formatStyle('Team',
-                                                          fontWeight = 'Bold')})
-    
-    
-    # data <- Draft_Act_Proj %>%
-    #           #filter(Year == 2016) %>%
-    #           select(-Round,-Pick,-Year) %>%
-    #           group_by(Team,POS) %>%
-    #           summarize(Ave = mean(Fantasy_Pts)) %>%
-    #           ungroup() %>%
-    #           dplyr::arrange(POS, desc(Ave)) %>%
-    #           spread(POS,Ave)
-              
-    
-    
-    # data <- Draft_Act_Proj %>%
-    #           filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
-    #           mutate(Performance = Fantasy_Pts - Projections,Wgt = Performance*Projections) %>%
-    #           group_by(Team, Year) %>%
-    #           summarize(Total = sum(Projections),
-    #                     Wgt_Return = sum(Wgt))
-    # data1 <- data %>%
-    #           mutate(WtvAvg = Wgt_Return/Total)
-                              
+    output$PosPts <- DT::renderDataTable({datatable(PtsPerPos(), options = list(pageLength = 25, dom = 't'), 
+                                                   rownames = FALSE, 
+                                                   colnames = c('Team','Position','Return (Pts)',
+                                                                'League Average Return (Pts)','Difference'))})
+
+      #Leaderboard for position
+      BestPos1 <- Draft_Act_Proj %>%
+        select(Team, Year, Round, POS, Fantasy_Pts) %>%
+        group_by(Team,POS) %>%
+        summarize(Pts = mean(Fantasy_Pts))
+      
+      BestPos2 <- Draft_Act_Proj %>%
+        select(Year, Round, POS, Fantasy_Pts) %>%
+        group_by(POS) %>%
+        summarize(Rd_Pts = mean(Fantasy_Pts))
+      
+      BestPos <- left_join(BestPos1,BestPos2,by = c('POS' = 'POS')) %>%
+        mutate(Difference = Pts - Rd_Pts) %>%
+        dplyr::arrange(POS,desc(Difference)) %>%
+        select(-Rd_Pts,-Pts)
+      
+      BestPos <- ddply(BestPos, "POS", function(x) head(x[order(x$Difference, decreasing = TRUE) , ], 1))
+      
+
+    output$BestPosition <- DT::renderDataTable({datatable(BestPos, options = list(pageLength = 25, dom = 't'), 
+                                                    rownames = FALSE, 
+                                                    colnames = c('Team','Position','+/- League Average')) %>%
+                                                  formatRound(c('Difference'))})
     
 ######################################################################################################################
 ################################### Create Plots for Output ##########################################################

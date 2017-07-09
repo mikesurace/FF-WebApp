@@ -40,14 +40,10 @@ shinyUI(fluidPage(
                       
                       
                       tabPanel("Trend Analysis", icon = icon('line-chart'),
-                            fluidPage(fluidRow(column(width = 5, 
-                                                  includeMarkdown("html/trend.Rmd")),
-                                              column(width = 3, offset = 1,
-                                                  selectInput('team', "Select a Team:", team_list)),
-                                              column(width = 3,
-                                                  sliderInput('year', "Choose Your Timeframe:", min = 2012, max = 2016, 
-                                                    value = c(2012,2016), sep =""))),
-                                      br(), br(),
+                            fluidPage(fluidRow(column(width = 12,includeMarkdown("html/trend.Rmd"))),
+                                      fluidRow(column(width = 3,selectInput('team', "Select a Team:", team_list)),
+                                               column(width = 3,sliderInput('year', "Choose Your Timeframe:", min = 2012, max = 2016,value = c(2012,2016), sep =""))),
+                                      br(),
                                       fluidRow(column(width = 5,
                                                       DT::dataTableOutput('trend')),
                                               column(width = 6, offset = 1,
@@ -107,7 +103,7 @@ shinyUI(fluidPage(
                                     fluidRow(column(width = 12,
                                                     DT::dataTableOutput('draftgrid'))))),
                            
-                  tabPanel("Trends & Tendencies",
+                  tabPanel("Draft Tendencies",
                           fluidPage(fluidRow(column(width = 6,
                                                     includeMarkdown('html/DraftTrends.Rmd')),
                                              column(width = 3,
@@ -118,14 +114,43 @@ shinyUI(fluidPage(
                                              column(width = 7,
                                                     plotlyOutput('TrendRound'))),
                                     br())),
-                  tabPanel("Draft Returns",
-                         fluidPage(fluidRow(column(width = 3,
-                                                   selectInput('draftGM',"Select a GM:",team_list)),
-                                            column(width = 3,
-                                                  selectInput('draftyear',"Select a Time:",c(2016,2015,2014,2013,2012)))),
-                                   fluidRow(column(width = 12,
-                                                   DT::dataTableOutput('draftresults'))))))               
-                          
+                  tabPanel("Player Returns",
+                           sidebarLayout(sidebarPanel(
+                             h1('Leaderboard'),
+                             br(),br(),br(),br(),br(),br(),br(),br(),
+                             h2('Best Overall Draft'),
+                             DT::dataTableOutput('TopDraft'),
+                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
+                             DT::dataTableOutput('BestRd'),
+                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(), br(), br(),
+                             DT::dataTableOutput('BestPosition')),
+                           mainPanel(
+                             fluidPage(fluidRow(
+                                        column(width = 12,includeMarkdown("html/SeasonReturns.Rmd"))),
+                                       fluidRow(
+                                        column(width = 3,selectInput('SeasonTeam',"Select a General Manager:",team_list)),
+                                        column(width = 3,selectInput('SeasonYear',"Select a Season:",c(2016,2015,2014,2013,2012)))),
+                                       fluidRow(
+                                         column(width = 12,DT::dataTableOutput('draftresults'))),
+                                       fluidRow(
+                                         column(width = 12,includeMarkdown('html/RoundReturns.Rmd'))),
+                                       fluidRow(
+                                         column(width = 3,selectInput('RoundTeam',"Select a General Manager:",team_list)),
+                                         column(width = 3,sliderInput('RoundYear', "Choose Which Season(s):", min = 2012, max = 2016, value = c(2012,2016), sep =""))),
+                                       fluidRow(
+                                         column(width = 12,DT::dataTableOutput('RdPts'))),
+                                       fluidRow(
+                                         column(width = 12,includeMarkdown('html/PositionReturns.Rmd'))),
+                                       fluidRow(
+                                         column(width = 3, selectInput('PositionTeam',"Select a General Manager:",team_list)),
+                                         column(width = 3, sliderInput('PositionYear',"Choose Which Season(s):",min=2012,max=2016,value = c(2012,2016),sep=""))),
+                                       fluidRow(
+                                         column(width = 12, DT::dataTableOutput('PosPts'))),
+                                       br(),br())),
+
+                           position = 'left')))               
+
 )))
+
 
 

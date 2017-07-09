@@ -1,0 +1,8 @@
+---
+title: "SeasonReturns"
+output: html_document
+---
+
+
+### Returns by Season
+The table below shows drafted players for the selected GM for the given season, along with their projected fantasy points at the start of the season and the actual fantasy points scored for that season. The return is calculated as measure of deviation from the preseason expectation. Use the drop down boxes on the side panel to look at different GMs and seasons.  

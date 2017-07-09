@@ -1,0 +1,7 @@
+---
+title: "RoundReturns"
+output: html_document
+---
+
+### Returns by Round
+The table below provides insights into which rounds are historically the best and worst for individual GMs as compared to the entire league. The returns column is the average fantasy points scoredin the respective round for the selected GM. The league returns column shows the average fantasy points for all GMs, providing insights into which GMs have done better or worse than the market. Users can chnage the parameters using the input boxes and sliders on the left.    
