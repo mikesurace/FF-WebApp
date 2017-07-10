@@ -3,9 +3,9 @@ title: Inebo
 account: ineboffleague
 server: shinyapps.io
 appId: 166282
-bundleId: 877359
+bundleId: 897489
 url: https://ineboffleague.shinyapps.io/inebo/
-when: 1498076559.40274
+when: 1499643150.07664
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .RData|ETL.R|data/Playoff_Data.csv|data/Reg_Data.csv
