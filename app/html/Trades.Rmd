@@ -1,0 +1,7 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+### Coming in 2017.....
+This page will allow GMs to evaulate trades throughout the season in an attempt to qunatfy which GM is actually the "best trader".   

@@ -1,0 +1,7 @@
+---
+title: "BestDraft"
+output: html_document
+---
+
+### Who Actually is The Best Drafter?
+The table below providews insights into some of the best drafts the Inebo has ever seen. Drafts are listed in order of greatest projection-weighted returns. The metric analyzes players' deviation from pre-season projections and actual performance. Think the draft doesn't matter? The top 10-ranking drafts in this list holds 4 Inebo championships. Well done Milk, well done.    

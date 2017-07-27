@@ -111,32 +111,30 @@ shinyServer(function(input, output, session) {
     #Data set used to produce chart for Draft trend analysis
     dtCompare <- reactive({
         data_team <- Draft_Act_Proj %>%
-                  filter(Round < 11) %>%
+                  filter(Round < 7) %>%
                   group_by(Team, Round) %>%
-                  summarize(WideReceiver = mean(WR),
-                            QuarterBack = mean(QB),
-                            TightEnd = mean(TE),
-                            RunningBack = mean(RB)) %>% 
+                  summarize(WR = mean(WR),
+                            QB = mean(QB),
+                            TE = mean(TE),
+                            RB = mean(RB)) %>% 
                   ungroup() %>%
-                  select(Team,Round,QuarterBack,RunningBack,WideReceiver,TightEnd) %>%
+                  select(Team,Round,QB,RB,WR,TE) %>%
                   gather("Position","Draft_Perc",3:6)
 
         data_all <- Draft_Act_Proj %>%
-          filter(Round < 11) %>%
+          filter(Round < 7) %>%
           group_by(Round) %>%
-          summarize(WideReceiver = mean(WR),
-                    QuarterBack = mean(QB),
-                    TightEnd = mean(TE),
-                    RunningBack = mean(RB)) %>% 
+          summarize(WR = mean(WR),
+                    QB = mean(QB),
+                    TE = mean(TE),
+                    RB = mean(RB)) %>% 
           ungroup() %>%
-          select(Round,QuarterBack,RunningBack,WideReceiver,TightEnd) %>%
+          select(Round,QB,RB,WR,TE) %>%
           gather("Position","Draft_Perc_All",2:5)
         
         data_merge <- left_join(data_team,data_all,by = c('Round' = 'Round','Position' = 'Position')) %>%
-                        mutate(Difference = Draft_Perc - Draft_Perc_All) %>%
-                        filter(Team == input$dtTeam) %>%
-                        select(-Draft_Perc,-Draft_Perc_All, -Team) %>%
-                        spread(Position,Difference)
+                        filter(Team == input$dtTeam, Position == input$dtPOS)
+        
         return(data_merge)})
     
     ############# END TAB - DRAFT TENDENCIES ####################
@@ -150,7 +148,8 @@ shinyServer(function(input, output, session) {
       return(data)})
     
     output$draftgrid <- DT::renderDataTable({datatable(grid(),options = list(pageLength = 25,dom = 't'),selection = 'single',rownames = FALSE,
-                                                       colnames = c('Team','Round 1','Round 2','Round 3','Round 4','Round 5','Round 6','Round 7','Round 8','Round 9','Round 10')) %>%
+                                                       colnames = c('Team','Round 1','Round 2','Round 3','Round 4','Round 5','Round 6',
+                                                                    'Round 7','Round 8','Round 9','Round 10')) %>%
         formatStyle('Team',fontWeight = 'Bold')})
     
     ############# END TAB - DRAFT RESULTS ####################
@@ -173,24 +172,39 @@ shinyServer(function(input, output, session) {
     
 
     #Data set for leaderboard of the overal draft section.
-    BestDraft <- Draft_Act_Proj %>%
+DraftLead <- function(){
+  
+            BestPick_00 <- Draft_Act_Proj %>%
+              filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
+              mutate(Performance = Fantasy_Pts - Projections) %>%
+              select(-POS,-WR,-QB,-TE,-RB,-Round,-Pick,-DEF,-K,-Fantasy_Pts,-Projections) %>%
+              group_by(Team,Year) %>%
+              top_n(n = 3, wt = Performance) %>%
+              spread(Name,Performance)
+            
+                     
+                     
+            BestDraft_00 <- Draft_Act_Proj %>%
               filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
               mutate(Performance = Fantasy_Pts - Projections,Wgt = Performance*Projections) %>%
               group_by(Team, Year) %>%
-              summarize(Total = sum(Projections),
-                        Wgt_Return = sum(Wgt))
-    BestDraft <- BestDraft %>%
+              summarize(Total = sum(Projections),Wgt_Return = sum(Wgt))
+            
+            BestDraft_01 <- BestDraft_00 %>%
               mutate(Total_Return = Wgt_Return/Total) %>%
               dplyr::arrange(desc(Total_Return)) %>%
               select(-Total, -Wgt_Return) %>%
               head(10)
 
+    return(datafinal)
+}
+    
     output$TopDraft <- DT::renderDataTable({datatable(BestDraft, 
                                                           options = list(pageLength = 25, dom = 't',
                                                           initComplete = JS("function(settings, json) {",
-                                                          "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});","}")),
+                                                          "$(this.api().table().header()).css({'background-color': '#FFF', 'color': '#000'});","}")),
                                                           rownames = FALSE,
-                                                          colnames = c('Team','Season','Total Draft Return')) %>%
+                                                          colnames = c('Team','Season','Return')) %>%
                                                           formatRound(c('Total_Return')) %>%
                                                           formatStyle(names(BestDraft),background = 'white')})
     
@@ -219,7 +233,8 @@ shinyServer(function(input, output, session) {
     output$RdPts <- DT::renderDataTable({datatable(PtsPerRound(), options = list(pageLength = 25, dom = 't'), 
                                                    rownames = FALSE, 
                                                    colnames = c('Team','Round','Return (Pts)',
-                                                                'League Average Return (Pts)','Difference'))})
+                                                                'League Average Return (Pts)','Difference')) %>%
+                                                   formatRound(c('Pts','Rd_Pts','Difference'))})
     ##Dataset for leaderboard by position
       BestRd1 <- Draft_Act_Proj %>%
         select(Team, Year, Round, POS, Fantasy_Pts) %>%
@@ -239,9 +254,12 @@ shinyServer(function(input, output, session) {
       
       BestRound <- ddply(BestRound, "Round", function(x) head(x[order(x$Difference, decreasing = TRUE) , ], 1))
     
-    output$BestRd <- DT::renderDataTable({datatable(BestRound, options = list(pageLength = 25, dom = 't'), 
-                                                   rownames = FALSE, 
-                                                   colnames = c('Team','Round','+/- League Average')) %>%
+    output$BestRd <- DT::renderDataTable({datatable(BestRound, 
+                                                    options = list(pageLength = 25, dom = 't',
+                                                    initComplete = JS("function(settings, json) {",
+                                                    "$(this.api().table().header()).css({'background-color': '#FFF', 'color': '#000'});","}")), 
+                                                    rownames = FALSE, 
+                                                    colnames = c('Team','Round','+/- League')) %>%
                                             formatRound(c('Difference'))})
     
     
@@ -272,7 +290,8 @@ shinyServer(function(input, output, session) {
     output$PosPts <- DT::renderDataTable({datatable(PtsPerPos(), options = list(pageLength = 25, dom = 't'), 
                                                    rownames = FALSE, 
                                                    colnames = c('Team','Position','Return (Pts)',
-                                                                'League Average Return (Pts)','Difference'))})
+                                                                'League Average Return (Pts)','Difference')) %>%
+                                                    formatRound(c('Pts','Rd_Pts','Difference'))})
 
       #Leaderboard for position
       BestPos1 <- Draft_Act_Proj %>%
@@ -293,10 +312,16 @@ shinyServer(function(input, output, session) {
       BestPos <- ddply(BestPos, "POS", function(x) head(x[order(x$Difference, decreasing = TRUE) , ], 1))
       
 
-    output$BestPosition <- DT::renderDataTable({datatable(BestPos, options = list(pageLength = 25, dom = 't'), 
+    output$BestPosition <- DT::renderDataTable({datatable(BestPos, 
+                                                    options = list(pageLength = 25, dom = 't',
+                                                    initComplete = JS("function(settings, json) {",
+                                                    "$(this.api().table().header()).css({'background-color': '#FFF', 'color': '#000'});","}")), 
                                                     rownames = FALSE, 
-                                                    colnames = c('Team','Position','+/- League Average')) %>%
+                                                    colnames = c('Team','Pos','+/- League')) %>%
                                                   formatRound(c('Difference'))})
+    
+    
+   
     
 ######################################################################################################################
 ################################### Create Plots for Output ##########################################################
@@ -310,10 +335,8 @@ shinyServer(function(input, output, session) {
               plot_ly(dtCompare(),
                       type = "bar",
                       x = ~Round,
-                      y = ~QuarterBack, name = "QB") %>%
-                add_trace(y = ~RunningBack, name = "RB") %>%
-                add_trace(y = ~WideReceiver, name = "WR") %>%
-                add_trace(y = ~TightEnd, name = "TE") %>%
+                      y = ~Draft_Perc, name = "GM Average") %>%
+                add_trace(y = ~Draft_Perc_All, name = "League Average") %>%
                 layout(title = "GM Tendencies vs League",
                        barmode = 'group',
                        yaxis = list(title = '% Drafted'))})

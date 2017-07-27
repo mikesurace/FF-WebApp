@@ -4,4 +4,4 @@ output: html_document
 ---
 
 ### Historical Trends and Tendencies  
-This page is designed to provide insights into how the league, as well as specific GMs, values certain positions. The side panel allows the user to change parameters for which seasons, GMs, and Rounds are included in the analysis. Hey Shep, maybe its time to move away from the running backs?  
+This page is designed to provide insights into how the league, as well as specific GMs, values certain positions by analyzing how often positions are drafted in early rounds. The table presents a breakdown of frequently the selected GM drafts the four main posiitons in Round 1, Round 2, and so on. The bar chart shows how these frequencies compare to the rest of the league. The user should use the "Position" input box to update the chart. Hey Shep, maybe its time to move away from the running backs?  

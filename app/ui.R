@@ -104,10 +104,10 @@ shinyUI(fluidPage(
                                                     DT::dataTableOutput('draftgrid'))))),
                            
                   tabPanel("Draft Tendencies",
-                          fluidPage(fluidRow(column(width = 6,
-                                                    includeMarkdown('html/DraftTrends.Rmd')),
-                                             column(width = 3,
-                                                    selectInput('dtTeam',"Choose General Manager(s):",team_list))),
+                          fluidPage(fluidRow(column(width = 12,
+                                                    includeMarkdown('html/DraftTrends.Rmd'))),
+                                    fluidRow(column(width = 3,selectInput('dtTeam',"Choose General Manager(s):",team_list)),
+                                             column(width = 3,selectInput('dtPOS',"Select a Position (Chart Only):",c('QB','WR','RB','TE')))),
                                     br(),br(),
                                     fluidRow(column(width = 5,
                                                     DT::dataTableOutput('Draft')),
@@ -115,40 +115,23 @@ shinyUI(fluidPage(
                                                     plotlyOutput('TrendRound'))),
                                     br())),
                   tabPanel("Player Returns",
-                           sidebarLayout(sidebarPanel(
-                             h1('Leaderboard'),
-                             br(),br(),br(),br(),br(),br(),br(),br(),
-                             h2('Best Overall Draft'),
-                             DT::dataTableOutput('TopDraft'),
-                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),
-                             DT::dataTableOutput('BestRd'),
-                             br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(),br(), br(), br(),
-                             DT::dataTableOutput('BestPosition')),
-                           mainPanel(
-                             fluidPage(fluidRow(
-                                        column(width = 12,includeMarkdown("html/SeasonReturns.Rmd"))),
-                                       fluidRow(
-                                        column(width = 3,selectInput('SeasonTeam',"Select a General Manager:",team_list)),
-                                        column(width = 3,selectInput('SeasonYear',"Select a Season:",c(2016,2015,2014,2013,2012)))),
-                                       fluidRow(
-                                         column(width = 12,DT::dataTableOutput('draftresults'))),
-                                       fluidRow(
-                                         column(width = 12,includeMarkdown('html/RoundReturns.Rmd'))),
-                                       fluidRow(
-                                         column(width = 3,selectInput('RoundTeam',"Select a General Manager:",team_list)),
-                                         column(width = 3,sliderInput('RoundYear', "Choose Which Season(s):", min = 2012, max = 2016, value = c(2012,2016), sep =""))),
-                                       fluidRow(
-                                         column(width = 12,DT::dataTableOutput('RdPts'))),
-                                       fluidRow(
-                                         column(width = 12,includeMarkdown('html/PositionReturns.Rmd'))),
-                                       fluidRow(
-                                         column(width = 3, selectInput('PositionTeam',"Select a General Manager:",team_list)),
-                                         column(width = 3, sliderInput('PositionYear',"Choose Which Season(s):",min=2012,max=2016,value = c(2012,2016),sep=""))),
-                                       fluidRow(
-                                         column(width = 12, DT::dataTableOutput('PosPts'))),
-                                       br(),br())),
-
-                           position = 'left')))               
+                             fluidPage(fluidRow(column(width = 8, includeMarkdown("html/BestDraft.Rmd"))),
+                                       fluidRow(column(width = 12, DT::dataTableOutput('TopDraft'))),
+                                       fluidRow(column(width = 8,includeMarkdown("html/SeasonReturns.Rmd"))),
+                                       fluidRow(column(width = 4,selectInput('SeasonTeam',"Select a General Manager:",team_list)),
+                                                column(width = 3,selectInput('SeasonYear',"Select a Season:",c(2016,2015,2014,2013,2012)))),
+                                       fluidRow(column(width = 12,DT::dataTableOutput('draftresults'))),
+                                       fluidRow(column(width = 8,includeMarkdown('html/RoundReturns.Rmd'))),
+                                       fluidRow(column(width = 4,selectInput('RoundTeam',"Select a General Manager:",team_list)),
+                                                column(width = 4,sliderInput('RoundYear', "Choose Which Season(s):", min = 2012, max = 2016, value = c(2012,2016), sep =""))),
+                                       fluidRow(column(width = 12,DT::dataTableOutput('RdPts'))),
+                                       fluidRow(column(width = 8,includeMarkdown('html/PositionReturns.Rmd'))),
+                                       fluidRow(column(width = 4, selectInput('PositionTeam',"Select a General Manager:",team_list)),
+                                                column(width = 4, sliderInput('PositionYear',"Choose Which Season(s):",min=2012,max=2016,value = c(2012,2016),sep=""))),
+                                       fluidRow(column(width = 12, DT::dataTableOutput('PosPts'))),
+                                       br(),br()))),
+                 tabPanel("Trade Evaulator",
+                          includeMarkdown('html/Trades.Rmd'))
 
 )))
 
