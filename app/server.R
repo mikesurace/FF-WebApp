@@ -173,16 +173,6 @@ shinyServer(function(input, output, session) {
 
     #Data set for leaderboard of the overal draft section.
 DraftLead <- function(){
-  
-            BestPick_00 <- Draft_Act_Proj %>%
-              filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
-              mutate(Performance = Fantasy_Pts - Projections) %>%
-              select(-POS,-WR,-QB,-TE,-RB,-Round,-Pick,-DEF,-K,-Fantasy_Pts,-Projections) %>%
-              group_by(Team,Year) %>%
-              top_n(n = 3, wt = Performance) %>%
-              spread(Name,Performance)
-            
-                     
                      
             BestDraft_00 <- Draft_Act_Proj %>%
               filter(Round < 11, POS %in% c('RB','WR','QB','TE')) %>%
@@ -195,16 +185,33 @@ DraftLead <- function(){
               dplyr::arrange(desc(Total_Return)) %>%
               select(-Total, -Wgt_Return) %>%
               head(10)
+            
+            data <- Draft_Act_Proj %>%
+                  filter(POS %in% c('RB','WR','QB','TE')) %>%
+                  mutate(Performance = (Fantasy_Pts - Projections),Percent = Performance/Projections)
+            data$Percent[is.infinite(data$Percent)] <- -1
+            
+            data <- data %>%
+              select(Team, Year,Name, Percent) %>%
+              group_by(Team,Year) %>%
+              top_n(5) %>%
+              mutate(Rank = rank(-Percent, ties.method = "first")) %>%
+              select(-Percent) %>%
+              spread(Rank,Name)
 
-    return(datafinal)
+            final <- left_join(BestDraft_01,data, by = c('Team' = 'Team','Year' = 'Year'))
+
+    return(final)
 }
     
+BestDraft <- DraftLead()
+
     output$TopDraft <- DT::renderDataTable({datatable(BestDraft, 
                                                           options = list(pageLength = 25, dom = 't',
                                                           initComplete = JS("function(settings, json) {",
                                                           "$(this.api().table().header()).css({'background-color': '#FFF', 'color': '#000'});","}")),
                                                           rownames = FALSE,
-                                                          colnames = c('Team','Season','Return')) %>%
+                                                          colnames = c('Team','Season','Overall Return','Best Pick','Second Pick','Third Pick','Fourth Pick','Fifth Pick')) %>%
                                                           formatRound(c('Total_Return')) %>%
                                                           formatStyle(names(BestDraft),background = 'white')})
     
@@ -213,16 +220,18 @@ DraftLead <- function(){
     PtsPerRound <- reactive({
       
           data <- Draft_Act_Proj %>%
-                    select(Team, Year, Round, POS, Fantasy_Pts) %>%
+                    mutate(Return = Fantasy_Pts - Projections) %>%
+                    select(Team, Year, Round, POS, Return) %>%
                     filter(Year %between% input$RoundYear) %>%
                     group_by(Team,Round) %>%
-                    summarize(Pts = mean(Fantasy_Pts))
+                    summarize(Pts = mean(Return))
           
           data1 <- Draft_Act_Proj %>%
-                    select(Year, Round, POS, Fantasy_Pts) %>%
+                    mutate(Return = Fantasy_Pts - Projections) %>%
+                    select(Year, Round, POS, Return) %>%
                     filter(Year %between% input$RoundYear) %>%
                     group_by(Round) %>%
-                    summarize(Rd_Pts = mean(Fantasy_Pts))
+                    summarize(Rd_Pts = mean(Return))
           
           data_all <- left_join(data,data1,by = c('Round' = 'Round')) %>%
                       mutate(Difference = Pts - Rd_Pts) %>%
