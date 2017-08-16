@@ -7,4 +7,4 @@ output: html_document
 **Record:** 35 - 30  
 **Skill:** Dysphagia  
 
-In true blind leading the blind fashion, Commissioner Gordon is the patriarch of this beloved Confederation. He has a comparable playoff history to the Buffalo Bills of the early 90s. When Commish isn't at GoodLife, he can be found staring at his ceilings into the wee hours of the night wondering; "Why can't I win the big one?"
+In true blind leading the blind fashion, Commissioner Gordon is the patriarch of this beloved Confederation. He has a comparable playoff history to the Buffalo Bills of the early 90s, but is still regarded as a top tier GM in the Inebo. When Commish isn't at GoodLife, he can be found staring at his ceilings into the wee hours of the night wondering; "Why can't I win the big one?"

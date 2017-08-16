@@ -6,6 +6,18 @@ shinyServer(function(input, output, session) {
 ################################### Create Data Views for Output #####################################################
 ######################################################################################################################  
   
+  # observe({ 
+  #   #query <- members[which(members$nr==input$Member),2]
+  #   test <- "http://news.scibite.com/scibites/news.html?q=GENE$"
+  # })
+  # output$frame <- renderUI({
+  #   #input$Member
+  #   my_test <- tags$iframe(src="https://twitter.com/POCKETsurACES/lists/fantasy-news", height=600, width=535)
+  #   print(my_test)
+  #   my_test
+  # })
+  
+  
   #######################################################################
   ########################### Trend Analysis ############################
   #######################################################################
@@ -59,7 +71,7 @@ shinyServer(function(input, output, session) {
               select(-Season,-Win_Pct,-Team)
       return(data)})
 
-    output$gamelogs <- DT::renderDataTable({DT::datatable(gamelogs(), options = list(pageLength = 100), rownames = FALSE)})
+    output$gamelogs <- DT::renderDataTable({DT::datatable(gamelogs(), options = list(pageLength = 10), rownames = FALSE)})
     
     
     ###############################################################################
@@ -211,7 +223,7 @@ BestDraft <- DraftLead()
                                                           initComplete = JS("function(settings, json) {",
                                                           "$(this.api().table().header()).css({'background-color': '#FFF', 'color': '#000'});","}")),
                                                           rownames = FALSE,
-                                                          colnames = c('Team','Season','Overall Return','Best Pick','Second Pick','Third Pick','Fourth Pick','Fifth Pick')) %>%
+                                                          colnames = c('Team','Season','Draft Return','Best Pick','2nd Best Pick','3rd Best Pick','4th Best Pick','5th Best Pick')) %>%
                                                           formatRound(c('Total_Return')) %>%
                                                           formatStyle(names(BestDraft),background = 'white')})
     
@@ -220,18 +232,27 @@ BestDraft <- DraftLead()
     PtsPerRound <- reactive({
       
           data <- Draft_Act_Proj %>%
-                    mutate(Return = Fantasy_Pts - Projections) %>%
+                    mutate(Return = (Fantasy_Pts - Projections))
+          data$Return[is.nan(data$Return)] <- 0
+          data$Return[is.infinite(data$Return)] <- 0
+          
+          data <- data %>%
                     select(Team, Year, Round, POS, Return) %>%
                     filter(Year %between% input$RoundYear) %>%
                     group_by(Team,Round) %>%
                     summarize(Pts = mean(Return))
           
           data1 <- Draft_Act_Proj %>%
-                    mutate(Return = Fantasy_Pts - Projections) %>%
+                    mutate(Return = (Fantasy_Pts - Projections))
+          data1$Return[is.nan(data1$Return)] <- 0
+          data1$Return[is.infinite(data1$Return)] <- 0
+          
+          data1 <- data1 %>%
                     select(Year, Round, POS, Return) %>%
                     filter(Year %between% input$RoundYear) %>%
                     group_by(Round) %>%
                     summarize(Rd_Pts = mean(Return))
+          
           
           data_all <- left_join(data,data1,by = c('Round' = 'Round')) %>%
                       mutate(Difference = Pts - Rd_Pts) %>%

@@ -7,5 +7,5 @@ output: html_document
 **Record:** 23 - 42  
 **Skill:** Getting Tortured
 
-The jury is still out, whether Black Mass is Tross' minor league team or not. He has had a tumultuous history in the Inebo, and will be finding himself at the Garden watching the Lady Liberty due to poor performance. There is no shortage of hard work coming from the Black Mass camp. Like clockwork he has had a top draft pick, and will undoubtedly make a blockbuster trade at some point throughout the season. There were many whispers during the winter meetings from high up execs claiming they think Black Mass will have a bounce back year.
+The jury is still out, whether Black Mass is Tross' minor league team or not. He has had a tumultuous history in the Inebo, and will be finding himself at the Garden watching the Lady Liberty due to poor performance. That said, there is no shortage of hard work coming from the Black Mass camp. Like clockwork he has had a top draft pick, and will undoubtedly make a blockbuster trade at some point throughout the season. There were many whispers during the winter meetings from high up execs claiming they think Black Mass will have a bounce back year.
 
