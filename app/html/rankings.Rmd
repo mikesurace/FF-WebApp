@@ -7,13 +7,13 @@ output: html_document
 General Managers are ranked based on the amount of "Inebo Points" each manager has accumulated over the history of the league. General Managers earn Inebo Points based on their league ranking in various statistics, which are listed below.
 
 **Total Points Scored:**  
-Represents the average points scored across the history of the league. The top ranked GM recieves 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.
+Represents the average points scored across the history of the league. The top ranked GM receives 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.
 
 **Winning Percentage:**   
-Represents the cumulative wiining percentage throughout the history of the league. The top ranked GM recieves 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.  
+Represents the cumulative winning percentage throughout the history of the league. The top ranked GM receives 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.  
 
 **Best Season**   
-Represents each GM's highest average points scored in any given season. The top ranked GM recieves 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.  
+Represents each GM's highest average points scored in any given season. The top ranked GM receives 12 Inebo Points, the second highest ranking is awarded 11 Inebo Points and so on. The GM that ranks last receives 1 Inebo Point.  
 
 **Playoffs:**   
 GMs are awarded one Inebo Point for each playoff appearance, playoff win, or playoff bye earned. Additionally, GMs are awarded 12 Inebo Points for each championship that is won.

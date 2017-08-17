@@ -7,6 +7,6 @@ output: html_document
 **Record:** 33 - 32  
 **Skill:** NA
 
-What can you really say about Richard? Well for one, if his name wasn't Richard Guiness, it'd probably be Jeff Fisher, because Rich has ridden the line of mediocrity for years. Don't get me wrong, Rich may just be on the brink of something great. Almost like the Cincinatti Bengals. He has sneakily decent seasons year over year--sometimes even suprising with a playoff bid. Just when people start to beleive, "Hey, I really think Rich is gonna make a run this year," boom! Just like that. Another first round playoff loss. But in all seriousness, I really think this could be Rich's year. 
+What can you really say about Richard? Well for one, if his name wasn't Richard Guinness, it'd probably be Jeff Fisher, because Rich has ridden the line of mediocrity for years. Don't get me wrong, Rich may just be on the brink of something great. Almost like the Cincinnati Bengals. He has sneakily decent seasons year over year--sometimes even surprising with a playoff bid. Just when people start to believe, "Hey, I really think Rich is gonna make a run this year," boom! Just like that. Another first round playoff loss. But in all seriousness, I really think this could be Rich's year. 
 
 

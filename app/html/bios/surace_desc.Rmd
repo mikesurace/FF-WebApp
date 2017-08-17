@@ -8,4 +8,4 @@ output: html_document
 **Record:** 31 - 34  
 **Skill:** Draft Day Blackouts  
 
-Surace, one of the five GMs of the Inebo to be able to call himself a champion, is another member of PEDGE. Suarce is famously known for his ability to drink excsessive amounts of alcohol on draft day and still walk away with a solid draft grade. Surace currently ranks fourth of all GMs and is looking to climb the rankings with another stellar season in 2017. 
+Surace, one of the five GMs of the Inebo to be able to call himself a champion, is another member of PEDGE. Surace is famously known for his ability to drink excessive amounts of alcohol on draft day and still walk away with a solid draft grade. Surace currently ranks fourth of all GMs and is looking to climb the rankings with another stellar season in 2017. 

@@ -57,8 +57,7 @@ shinyUI(fluidPage(
                  
                  
                  tabPanel("Meet the Inebo",
-                          fluidPage(div("Player Profile",
-                                      br(), br(), br()),
+                          fluidPage(
                                     fluidRow(column(width = 7, includeMarkdown("html/bios/milk_desc.Rmd")),
                                              column(width = 4, offset = 1, img(src = "milk.jpg",width = 300, height = 300))),
                                             br(), br(), br(),

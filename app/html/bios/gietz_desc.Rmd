@@ -7,4 +7,4 @@ output: html_document
 **Record:** 36 - 29  
 **Skill:** Torture  
 
-"I love me, some me" - Terrell Owens - The Mighty Albatross. The most colorful GM of the Inebo originally hails from the North Shore, but now finds himself galavanting in the South. There is no such thing as an untouchable player on the Tross' roster. One day you could be his RB1, and the next you're selling oranges on 7th & 34th. It is that eccentric style of GMing, which fuels the success of Tross.
+"I love me, some me" - Terrell Owens - The Mighty Albatross. The most colorful GM of the Inebo originally hails from the North Shore, but now finds himself galivanting in the South. There is no such thing as an untouchable player on the Tross' roster. One day you could be his RB1, and the next you're selling oranges on 7th & 34th. It is that eccentric style of GMing, which fuels the success of Tross.

@@ -4,4 +4,4 @@ output: html_document
 ---
 
 ### Coming in 2017.....
-This page will allow GMs to evaulate trades throughout the season in an attempt to quantify which GM is actually the "best trader".   
+This page will allow GMs to evaluate trades throughout the season in an attempt to quantify which GM is actually the "best trader".   
